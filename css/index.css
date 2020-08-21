@@ -566,6 +566,29 @@ button {
   float: right;
 }
 
+@media (max-width: 992px) {
+  .news-mini {
+    height: 384px;
+    border-bottom: none;
+  }
+  .news-mini span, .news-mini p {
+    position: relative;
+    left: 0;
+    top: initial;
+  }
+  .news-mini img {
+    width: 100%;
+  }
+  .news-mini .date-time {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+    display: block;
+  }
+  .news-link {
+    display: none;
+  }
+}
+
 .form form {
   width: 471px;
   height: 559px;
@@ -855,6 +878,12 @@ button {
   }
 }
 
+@media (max-width: 992px) {
+  .news {
+    margin-top: 32px;
+  }
+}
+
 .form {
   width: 100%;
   height: 650px;
@@ -1012,7 +1041,7 @@ footer .vk {
 }
 
 @media (max-width: 992px) {
-  .gallery, .news, .form, footer {
+  .gallery, .form, footer {
     display: none !important;
   }
 }

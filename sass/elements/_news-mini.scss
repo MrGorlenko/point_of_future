@@ -66,3 +66,28 @@
   color: #3D4B53;
   float: right;
 }
+
+@media (max-width: 992px){
+  .news-mini{
+    height: 384px;
+    border-bottom: none;
+    span, p{
+      position: relative;
+      left: 0;
+      top: initial;
+    }
+
+    img{
+      width: 100%;
+    }
+
+    .date-time{
+      margin-top: 16px !important;
+      margin-bottom: 16px !important;
+      display: block;
+    }
+  }
+  .news-link{
+    display: none;
+  }
+}
