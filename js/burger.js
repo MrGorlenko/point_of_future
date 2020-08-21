@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  let sections = '.hero, .about, .founders, .news';
+
   let burger_z = function(){
     $('.burger').addClass('burger-z')
     $('.burger').removeClass('burger-z-none')
@@ -10,17 +12,28 @@ $(document).ready(function(){
     $('.burger').removeClass('burger-z')
   }
 
+  let content_off = function(){
+    $(sections).addClass('display_none')
+  }
+
+  let content_on = function(){
+    $(sections).removeClass('display_none')
+  }
+
   $('#burger-toggle').click(function(){
     $('.burger').addClass('burger-active');
     $('.burger').removeClass('burger-passive');
     burger_z();
-    // setTimeout(burger_z, 0);
+    content_off();
   })
 
   $('#burger-close').click(function(){
     $('.burger').removeClass('burger-active');
     $('.burger').addClass('burger-passive');
     burger_z_none();
-    // setTimeout(burger_z_none, 0);
+    content_on();
   })
+
+
+
 })

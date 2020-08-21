@@ -1158,6 +1158,10 @@ footer .vk {
   justify-content: space-between;
 }
 
+.display_none {
+  display: none !important;
+}
+
 @media (max-width: 992px) {
   .gallery, .form, footer {
     display: none !important;
