@@ -13,12 +13,14 @@ $(document).ready(function(){
   $('#burger-toggle').click(function(){
     $('.burger').addClass('burger-active');
     $('.burger').removeClass('burger-passive');
-    setTimeout(burger_z, 0);
+    burger_z();
+    // setTimeout(burger_z, 0);
   })
 
   $('#burger-close').click(function(){
     $('.burger').removeClass('burger-active');
     $('.burger').addClass('burger-passive');
-    setTimeout(burger_z_none, 0);
+    burger_z_none();
+    // setTimeout(burger_z_none, 0);
   })
 })
