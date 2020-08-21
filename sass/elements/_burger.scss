@@ -13,11 +13,19 @@
     width: 64px;
   }
 
+  .line{
+    height: 1px;
+    background-color: #B9D4E4;
+    width: 273px;
+  }
+
   .base{
-    width: 312px;
+    // width: 312px;
+    width: 100%;
+    padding: 0 24px;
     margin: auto;
 
-    border-bottom: 1px solid #B9D4E4;;
+    // border-bottom: 1px solid #B9D4E4;;
   }
 
   .search{
