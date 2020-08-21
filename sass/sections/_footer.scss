@@ -1,0 +1,125 @@
+footer{
+
+  margin-top: 50px;
+
+  p{
+    width: 539px;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-top: 32px;
+  }
+
+  .bottom{
+    margin-top: 56px;
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid #C7C7C7;
+    p{
+      width: 100%;
+      text-align: center;
+
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      color: #3D4B53;
+    }
+  }
+
+  .social{
+    width: 340px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-link{
+    width: 56px;
+    height: 56px;
+    display: block;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(90deg, rgba(185, 212, 228, 0.2) -3.57%, rgba(185, 212, 228, 0.2) 103.93%);
+    border-radius: 50%;
+    transition: background .3s ease;
+  }
+
+  .icon{
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+  }
+
+  .social-link_inst:hover{
+    background: linear-gradient(134.68deg, #405DE6 8.02%, #5851DB 23.65%, #833AB4 38.06%, #833AB4 53.7%, #C13584 65.63%, #E1306C 77.57%, #FD1D1D 87.04%);
+    transition: background-color .3s ease;
+    .insta{
+      background-image: url('../img/instagram-2.svg');
+    }
+  }
+
+  .social-link_twitter:hover{
+    background-color: #1DA1F2;
+    transition: background-color .3s ease;
+    .twitter{
+      background-image: url('../img/twitter-2.svg');
+    }
+  }
+
+  .social-link_facebook:hover{
+    background-color: #0078D7;
+    transition: background-color .3s ease;
+    .facebook{
+      background-image: url('../img/facebook-2.svg');
+    }
+  }
+
+  .social-link_youtube:hover{
+    background-color: #FF0000;
+    transition: background-color .3s ease;
+    .youtube{
+      background-image: url('../img/youtube-2.svg');
+    }
+  }
+
+  .social-link_vk:hover{
+    background-color: #45668E;
+    transition: background-color .3s ease;
+    .vk{
+      background-image: url('../img/vk-2.svg');
+    }
+  }
+
+  .insta, .twitter, .facebook, .youtube, .vk{
+    transition: background-image .3s ease;
+  }
+
+  .insta{
+    background-image: url('../img/insta.svg');
+  }
+
+  .twitter{
+    background-image: url('../img/twitter.svg');
+  }
+
+  .facebook{
+    background-image: url('../img/facebook.svg');
+  }
+
+  .youtube{
+    background-image: url('../img/youtube.svg');
+  }
+
+  .vk{
+    background-image: url('../img/logo_vk_24.svg');
+  }
+}

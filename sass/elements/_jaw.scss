@@ -1,0 +1,78 @@
+@import '../mixins';
+@import '../_variables.sass';
+
+$base-width: 288px;
+
+.jaw-active{
+  right: 0 !important;
+  transition: right .3s ease;
+}
+
+.jaw{
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  top: 120px;
+  right: -$base-width;
+
+  transition: right .3s ease;
+
+  .eye, .base{
+    background: #FFFFFF;
+    box-shadow: 2px 0px 20px rgba(125, 125, 125, 0.2);
+    border-radius: 16px 0px 0px 16px;
+  }
+
+  .eye{
+    width: 68px;
+    height: 68px;
+    @include aligning;
+    cursor: pointer;
+  }
+  .base{
+    width: $base-width;
+    height: 324px;
+
+    padding: 0 22px;
+
+    span{
+      margin-top: 24px;
+      margin-bottom: 14px;
+      display: block;
+      font-family: $basic-font;
+      font-weight: 600;
+      font-size: 16px;
+      color: #000000;
+    }
+
+    .colors, .size{
+      width: 100%;
+      @include justify-between
+    }
+
+    .colors{
+      .icon{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+      .grey{
+        background: #3D4B53;
+      }
+      .black{
+        background: #1A1A1A;
+      }
+      .green{
+        background: #55BA60;
+      }
+      .blue{
+        background: #2C5DE5;
+      }
+    }
+
+    .size{
+      margin-bottom: 32px;
+    }
+  }
+}

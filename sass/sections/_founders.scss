@@ -1,0 +1,35 @@
+.founders{
+  margin-top: 69px;
+
+  .container{
+    position: relative;
+  }
+
+  .pad{
+    padding-top: 165px;
+  }
+
+  .decor1, .decor2{
+    position: absolute;
+    z-index: 3;
+  }
+
+  .decor1{
+    top: -45px;
+    right: -35px;
+  }
+
+  .decor2{
+    width: 100%;
+    bottom: -70px;
+
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px){
+  .founders{
+    overflow: hidden;
+  }
+}

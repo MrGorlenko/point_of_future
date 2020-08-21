@@ -1,0 +1,34 @@
+$circle-size: 1075px;
+$circle-coords: -220px;
+
+.hero{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(185, 212, 228, 0.2) -3.57%, rgba(185, 212, 228, 0.2) 103.93%);
+  // background-image: url('../img/hero-bg.png');
+  height: 640px;
+
+  .circle{
+    width: $circle-size;
+    height: $circle-size;
+    border-radius: 50%;
+    position: absolute;
+    right: $circle-coords;
+    top: $circle-coords;
+    background: rgba(0, 0, 0, 0.02);
+  }
+}
+
+@media (max-width: 1440px){
+  $circle-size: 965px;
+  $circle-coords: -180px;
+  .hero{
+    .circle{
+      width: $circle-size;
+      height: $circle-size;
+      right: -300px;
+      top: $circle-coords
+    }
+  }
+}

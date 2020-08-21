@@ -1,0 +1,19 @@
+@mixin aligning{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin justify-between{
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin title{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: #272B2D;
+}

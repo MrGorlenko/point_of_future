@@ -1,0 +1,31 @@
+.news{
+  margin-top: 100px;
+
+  span{
+    display: block;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #3D4B53;
+  }
+
+  .date-time{
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .mt{
+    margin-top: 48px;
+  }
+
+}
+
+@media (max-width: 1200px){
+  .news{
+    .news-big{
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import '../mixins';
+
+.about{
+
+  margin-top: 136px;
+
+  .subwrite{
+    position: absolute;
+  }
+
+  .main-pic{
+    width: 100%;
+  }
+
+  h2:first-child{
+    margin-top: 35px;
+  }
+
+  .first-title{
+    margin-top: 35px;
+  }
+
+  .second-title{
+    margin-top: 15px;
+  }
+
+  h2{
+    width: 525px;
+    @include title;
+    margin-bottom: 0;
+  }
+
+  .paragraph_1{
+    width: 634px;
+  }
+
+
+
+  .lines{
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .boy{
+    width: 80%;
+  }
+
+  .content{
+    width: 342px;
+    height: 244px;
+    background: linear-gradient(90deg, rgba(185, 212, 228, 0.2) -3.57%, rgba(185, 212, 228, 0.2) 103.93%);
+    opacity: 0.8;
+    border-radius: 8px;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media screen and (max-width: 1200px){
+      width: 295px;
+    }
+  }
+
+  .mt{
+    margin-top: 69px;
+  }
+
+  .pl{
+    padding-left: 96px;
+  }
+}
+
+// @media (max-width: 1440px){
+//   .about{
+//     .col-8{
+//       padding-left: 85px;
+//     }
+//   }
+// }
+
+@media (max-width: 1200px){
+  .about{
+    p{
+      width: 100%;
+    }
+
+    .paragraph_1{
+      width: 100%;
+    }
+
+    .subwrite{
+      width: 75%;
+    }
+  }
+}

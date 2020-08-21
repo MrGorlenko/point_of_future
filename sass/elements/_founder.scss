@@ -1,0 +1,70 @@
+.founder-grey{
+  background-color: #F6F7FC;
+}
+
+.founder-pink{
+  background-color: #FEF8F8;
+}
+
+
+.founder{
+  width: 540px;
+  height: 393px;
+  border-radius: 16px;
+
+  margin-top: 30px;
+
+  padding: 32px;
+
+  .quote{
+    margin-bottom: 16px;
+  }
+
+  p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3D4B53;
+    margin-bottom: 48px;
+  }
+
+  .info{
+    position: relative;
+
+    .name, .role{
+      position: absolute;
+      left: 99px;
+    }
+    .name{
+      top: 12.5px;
+      color: #272B2D;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .role{
+      top: 44.5px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      color: #3D4B53;
+      letter-spacing: 0.4px;
+      width: 377px;
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .founder{
+    width: 100%;
+    height: 460px;
+    .info{
+      .role{
+        width: 75%;
+      }
+    }
+  }
+}
