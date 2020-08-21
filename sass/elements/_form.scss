@@ -16,13 +16,21 @@ $input-height: 48px;
       background: #F1F1F1;
       border-radius: 4px;
       outline: none;
+      border: none;
+    }
+
+    select, .long{
       width: $input-width;
+
     }
 
     select{
 
       margin-top: 26px;
       height: $input-height;
+      padding-left: 8px;
+      padding-right: 16px;
+      color: #3d4b53bf;
     }
 
     .short{
@@ -36,6 +44,9 @@ $input-height: 48px;
 
     input{
       margin-top: 26px;
+      padding-left: 16px;
+      width: $input-width;
+      color: #3D4B53;
     }
 
     button{

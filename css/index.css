@@ -498,12 +498,19 @@ button {
   background: #F1F1F1;
   border-radius: 4px;
   outline: none;
+  border: none;
+}
+
+.form form select, .form form .long {
   width: 411px;
 }
 
 .form form select {
   margin-top: 26px;
   height: 48px;
+  padding-left: 8px;
+  padding-right: 16px;
+  color: #3d4b53bf;
 }
 
 .form form .short {
@@ -517,6 +524,9 @@ button {
 
 .form form input {
   margin-top: 26px;
+  padding-left: 16px;
+  width: 411px;
+  color: #3D4B53;
 }
 
 .form form button {
