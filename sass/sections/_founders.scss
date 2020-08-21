@@ -33,3 +33,12 @@
     overflow: hidden;
   }
 }
+
+@media (max-width: 992px){
+  .founders{
+    margin-top: 32px;
+    .decor1, .decor2{
+      display: none;
+    }
+  }
+}

@@ -6,7 +6,6 @@ $circle-coords: -220px;
   width: 100%;
   overflow: hidden;
   background: linear-gradient(90deg, rgba(185, 212, 228, 0.2) -3.57%, rgba(185, 212, 228, 0.2) 103.93%);
-  // background-image: url('../img/hero-bg.png');
   height: 640px;
 
   .circle{
@@ -29,6 +28,21 @@ $circle-coords: -220px;
       height: $circle-size;
       right: -300px;
       top: $circle-coords
+    }
+  }
+}
+
+@media (max-width: 992px){
+  $circle-size: 480px;
+  $circle-coords: -180px;
+  .hero{
+    height: 472px;
+
+    .circle{
+      width: $circle-size;
+      height: $circle-size;
+      right: $circle-coords;
+      top: $circle-coords;
     }
   }
 }

@@ -8,6 +8,12 @@ header{
   .top{
     height: 50px;
     border-bottom: 1px solid #E5E5E5;
+    .col-lg-5{
+      a, span{
+        color: #8A8D8F;
+        font-size: 14px;
+      }
+    }
     a{
       margin-left: $distance;
       font-size: $basic-font-size;
@@ -108,6 +114,46 @@ header{
     .bottom{
       ul{
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 993px){
+  header{
+  
+    .top{
+      display: none !important;
+      .col-6:last-child{
+        a:first-child, a:nth-child(2), a:nth-child(3){
+          display: none;
+        }
+      }
+
+      span, a{
+        font-size: 14px;
+        color: #8A8D8F;
+      }
+      a:first-child{
+        margin-left: 0;
+      }
+    }
+
+    .bottom{
+      ul{
+        display: none;
+      }
+      .col-6:first-child{
+        img{
+          width: 128px;
+        }
+      }
+      .col-6:last-child{
+        img{
+          width: 24px;
+          height: 24px;
+          display: block;
+        }
       }
     }
   }

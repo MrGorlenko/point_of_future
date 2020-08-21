@@ -8,9 +8,18 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <script src='js-lib/jquery.js'></script>
   <script src='js/version.js'></script>
   <script src='js/news.js'></script>
+
+  <script src='js/slider.js'></script>
+
 </head>
 <body>
 
@@ -18,11 +27,11 @@
     <div class="top">
       <div class="container-fluid">
         <div class="row d-flex justify-content-between top align-items-center">
-          <div class="col-5">
+          <div class="col-6 col-lg-5">
             <a href="#">En</a>
             <span>English language</span>
           </div>
-          <div class="col-7 justify-content-end d-flex">
+          <div class="col-6 col-lg-7 justify-content-end d-flex">
             <a href="#">Новости</a>
             <a href="#">Вакансии для сотрудников</a>
             <a href="#">Контакты</a>
@@ -36,8 +45,8 @@
     <div class="bottom">
       <div class="container-fluid">
         <div class="row d-flex bottom align-items-center">
-          <div class="col-2"><img src="img/logo.png" alt=""></div>
-          <div class="col-10 d-flex justify-content-end">
+          <div class="col-6 col-lg-2"><img src="img/logo.png" alt=""></div>
+          <div class="col-lg-10 d-none d-lg-flex justify-content-end">
             <ul>
               <li><a href="#">О проекте</a></li>
               <li><a href="#">Фонд "Новый дом"</a></li>
@@ -46,6 +55,9 @@
               <li><a href="#">Служба СПС</a></li>
               <li><a href="#">Сведения об образовательной организации</a></li>
             </ul>
+          </div>
+          <div class="col-6 d-lg-none d-flex justify-content-end">
+            <img src="img/burger.svg" alt="">
           </div>
         </div>
       </div>
@@ -97,20 +109,20 @@
 
   <section class="about">
     <div class="container">
-      <div class="row">
-        <div class="col-8">
+      <div class="row d-flex flex-column-reverse flex-lg-row">
+        <div class="col-lg-8 col-12">
           <img class='subwrite' src="img/history.svg" alt="">
           <h2 class='first-title'>Образовательный комплекс «Точка Будущего»</h2>
           <img class='lines' src="img/lines.svg" alt="">
           <p class='paragraph_1'>Образовательный комплекс «Точка Будущего» в Иркурстке — это масштабный проект благотворительного фонда «Новый Дом». Первоначальное рабочее название проекта «Умная школа».</p>
           <p class='paragraph_1'>Этот проект — личная инциатива основателя фонда «Новый Дом» Альберта Авдоляна, который был полностью поддержан главой попечительского совета фонда «Новый Дом» Сергеем Чемезовым. Задача проекта дать «Точку будущего» для детей-сирот и детей из приёмных семей, чтобы в дальнейшем они смогли полноценными членами общества.</p>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-12">
           <img class='main-pic' src="img/complex.png" alt="">
         </div>
       </div>
 
-      <div class="row justify-content-between mt ml-0 mr-0">
+      <div class="d-lg-flex d-none row justify-content-between mt ml-0 mr-0">
         <div class="content">
           <p class='paragraph_2'>Доступ к обучающей программе, лабораториям и мастерским для всех учеников школы будет общим. Это поможет ученикам найти занятие, которое может стать хобби, а в дальнейшем, возможно, и профессией;</p>
           <img src="img/blue-line.svg" alt="">
@@ -125,11 +137,40 @@
         </div>
       </div>
 
-      <div class="row d-flex align-items-center mt">
-        <div class="col-4 p-0">
-          <img class='main-pic' src="img/projectPhilosophy.png" alt="">
+      <div class="d-lg-none col-12 p-0 ">
+
+        <div class="swiper-container swiper-container_1">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="content">
+                  <p class='paragraph_2'>Доступ к обучающей программе, лабораториям и мастерским для всех учеников школы будет общим. Это поможет ученикам найти занятие, которое может стать хобби, а в дальнейшем, возможно, и профессией;</p>
+                  <img src="img/blue-line.svg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <p class='paragraph_2'>Доступ к обучающей программе, лабораториям и мастерским для всех учеников школы будет общим. Это поможет ученикам найти занятие, которое может стать хобби, а в дальнейшем, возможно, и профессией;</p>
+                  <img src="img/blue-line.svg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <p class='paragraph_2'>Доступ к обучающей программе, лабораториям и мастерским для всех учеников школы будет общим. Это поможет ученикам найти занятие, которое может стать хобби, а в дальнейшем, возможно, и профессией;</p>
+                  <img src="img/blue-line.svg" alt="">
+                </div>
+              </div>
+          </div>
         </div>
-        <div class="col-8 pl">
+        
+      </div>
+
+
+
+      <div class="row d-lg-flex flex-lg-row flex-column align-items-center mt">
+        <div class="col-lg-4 col-12 p-lg-0">
+          <img class='main-pic main-pic-mirror' src="img/projectPhilosophy.png" alt="">
+        </div>
+        <div class="col-lg-8 col-12 pl">
           <img class='subwrite' src="img/philosophy.svg" alt="">
           <h2 class='second-title'>Философия проекта</h2>
           <img class='lines' src="img/lines.svg" alt="">
@@ -149,7 +190,7 @@
       </div>
       
 
-      <div class="row">
+      <div class="row d-lg-flex d-none">
         <div class="col-6 pad">
 
           <div class="founder founder-pink">
@@ -217,6 +258,81 @@
           </div>
 
         </div>
+      </div>
+
+      <div class="d-lg-none col-12 p-0 ">
+
+        <div class="swiper-container swiper-container_2">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="founder founder-grey">
+                  <img class='quote' src="img/quote.svg" alt="">
+                  <p>В образовательных проектах необходимо сочетать специфику региона с задачами научно-технологического развития. И при этом учитывать возможности каждого ребёнка, его мотивацию. Создать механизм всестороннего образования, развивающего «способность определиться в жизни» — это и есть наша задача.</p>
+                  <div class="info">
+                    <img src="img/Chemezov.png" alt="">
+                    <span class="name">ЧЕМЕЗОВ С.В.</span>
+                    <span class="role">ГЛАВА ПОПЕЧИТЕЛЬСКОГО СОВЕТА БЛАГОТВОРИТЕЛЬНОГО ФОНДА «НОВЫЙ ДОМ»</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="founder founder-grey">
+                  <img class='quote' src="img/quote.svg" alt="">
+                  <p>В образовательных проектах необходимо сочетать специфику региона с задачами научно-технологического развития. И при этом учитывать возможности каждого ребёнка, его мотивацию. Создать механизм всестороннего образования, развивающего «способность определиться в жизни» — это и есть наша задача.</p>
+                  <div class="info">
+                    <img src="img/Bolotov.png" alt="">
+                    <span class="name">БОЛОТОВ Р.Н.</span>
+                    <span class="role">МЭР ИРКУТСКА</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="founder founder-pink">
+                  <img class='quote' src="img/quote.svg" alt="">
+                  <p>В образовательных проектах необходимо сочетать специфику региона с задачами научно-технологического развития. И при этом учитывать возможности каждого ребёнка, его мотивацию. Создать механизм всестороннего образования, развивающего «способность определиться в жизни» — это и есть наша задача.</p>
+                  <div class="info">
+                    <img src="img/Belyanova.png" alt="">
+                    <span class="name">БЕЛЯНОВА И.В.</span>
+                    <span class="role">ПРЕЗИДЕНТ БЛАГОТВОРИТЕЛЬНОГО ФОНДА «НОВЫЙ ДОМ»</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="founder founder-grey">
+                  <img class='quote' src="img/quote.svg" alt="">
+                  <p>В образовательных проектах необходимо сочетать специфику региона с задачами научно-технологического развития. И при этом учитывать возможности каждого ребёнка, его мотивацию. Создать механизм всестороннего образования, развивающего «способность определиться в жизни» — это и есть наша задача.</p>
+                  <div class="info">
+                    <img src="img/Avdolyan.png" alt="">
+                    <span class="name">АВДОЛЯН А.А.</span>
+                    <span class="role">УЧРЕДИТЕЛЬ И ЧЛЕН ПОПЕЧИТЕЛЬСКОГО СОВЕТА БЛАГОТВОРИТЕЛЬНОГО ФОНДА «НОВЫЙ ДОМ»</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="founder founder-grey">
+                  <img class='quote' src="img/quote.svg" alt="">
+                  <p>В образовательных проектах необходимо сочетать специфику региона с задачами научно-технологического развития. И при этом учитывать возможности каждого ребёнка, его мотивацию. Создать механизм всестороннего образования, развивающего «способность определиться в жизни» — это и есть наша задача.</p>
+                  <div class="info">
+                    <img src="img/Sokol.png" alt="">
+                    <span class="name">СОКОЛ С.М.</span>
+                    <span class="role">ДЕПУТАТ ГОСУДАРСТВЕННОЙ ДУМЫ РФ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="founder founder-pink">
+                  <img class='quote' src="img/quote.svg" alt="">
+                  <p>В образовательных проектах необходимо сочетать специфику региона с задачами научно-технологического развития. И при этом учитывать возможности каждого ребёнка, его мотивацию. Создать механизм всестороннего образования, развивающего «способность определиться в жизни» — это и есть наша задача.</p>
+                  <div class="info">
+                    <img src="img/Berdnikov.png" alt="">
+                    <span class="name">БЕРДНИКОВ Д.В.</span>
+                    <span class="role">ИСПОЛНЯЮЩИЙ ОБЯЗАННОСТИ ПЕРВОГО ЗАМЕСТИТЕЛЯ ГУБЕРНАТОРА ИРКУТСКОЙ ОБЛАСТИ.</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        
       </div>
 
 

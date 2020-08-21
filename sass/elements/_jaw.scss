@@ -76,3 +76,9 @@ $base-width: 288px;
     }
   }
 }
+
+@media (max-width: 992px){
+  .jaw{
+    display: none;
+  }
+}
