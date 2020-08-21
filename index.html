@@ -19,6 +19,7 @@
   <script src='js/news.js'></script>
 
   <script src='js/slider.js'></script>
+  <script src='js/burger.js'></script>
 
 </head>
 <body>
@@ -57,12 +58,51 @@
             </ul>
           </div>
           <div class="col-6 d-lg-none d-flex justify-content-end">
-            <img src="img/burger.svg" alt="">
+            <img src="img/burger.svg" alt="" id='burger-toggle'>
           </div>
         </div>
       </div>
     </div>
   </header>
+
+  <div class="d-lg-none burger burger-passive burger-z-none">
+    <div class="top d-flex justify-content-between align-items-center">
+      <img src="img/logo.png" alt="logo">
+      <div class="enter d-flex justify-content-between align-items-center">
+        <a href="#"><img src="img/log-in.svg" alt=""></a>
+        <a id='burger-close' href="#"><img src="img/close.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="base">
+      <input type="text" class='search' placeholder="Поиск...">
+      <ul>
+        <li><a href="#">О проекте</a></li>
+        <li><a href="#">Фонд "Новый дом"</a></li>
+        <li><a href="#">Поступающим</a></li>
+        <li><a href="#">Буклаб "Гагарин"</a></li>
+        <li><a href="#">Служба СПС</a></li>
+        <li><a href="#">Сведения об образовательной организации</a></li>
+      </ul>
+    </div>
+
+    <div class="bottom">
+      <ul>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Вакансии для сотрудников</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="links d-flex justify-content-between align-items-center">
+      <a href="#"><img src="img/insta.svg" alt=""></a>
+      <a href="#"><img src="img/twitter.svg" alt=""></a>
+      <a href="#"><img src="img/facebook.svg" alt=""></a>
+      <a href="#"><img src="img/youtube.svg" alt=""></a>
+      <a href="#"><img src="img/logo_vk_24.svg" alt=""></a>
+    </div>
+
+    <p class="copyrights">Copyright © ТОЧКА БУДУЩЕГО</p>
+  </div>
 
   <section class="hero">
      <div class="circle"></div>

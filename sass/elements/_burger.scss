@@ -1,0 +1,119 @@
+.burger{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 907px;
+  background: #F1F6FA;
+  // z-index: 10;
+
+  .top{
+    padding: 24px 15px;
+  }
+  .enter{
+    width: 64px;
+  }
+
+  .base{
+    width: 312px;
+    margin: auto;
+
+    border-bottom: 1px solid #B9D4E4;;
+  }
+
+  .search{
+     height: 48px;
+     width: 100%;
+     padding-left: 12px;
+     background: none;
+     border-left: none;
+     border-right: none;
+
+     border-top: 1px solid #9EB8CD;
+     border-bottom: 1px solid #9EB8CD;
+
+     outline: none !important;
+
+     font-family: Inter;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 20px;
+     line-height: 32px;
+     color: #9EB8CD;
+    //  margin-bottom: 24px;
+   }
+
+   ul{
+     padding-left: 0;
+     li{
+        margin-bottom: 24px;
+        list-style-type: none;
+        text-align: center;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+
+        &:first-child{
+          margin-top: 24px;
+        }
+
+        a{
+          color: #3D4B53;
+
+          width: 100%;
+          display: block;
+        }
+     }
+   }
+
+   .links{
+      width: 312px;
+      margin: auto;
+
+      border-bottom: 1px solid #9EB8CD;
+      height: 96px;
+      a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #DDE2E6;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+      }
+   }
+
+   .copyrights{
+      // margin: auto;
+     margin-top: 20px;
+     width: 100%;
+     text-align: center;
+    //  margin: auto;
+
+     font-family: Inter;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 12px;
+     line-height: 16px;
+     color: #3D4B53;
+   }
+}
+
+.burger-active{
+  opacity: 1;
+  transition: opacity .2s ease;
+}
+
+.burger-z{
+  z-index: 10;
+}
+
+.burger-passive{
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.burger-z-none{
+  z-index: -1;
+}
