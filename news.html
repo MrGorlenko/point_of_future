@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+
+  <script src='js-lib/jquery.js'></script>
+  <script src='js/version.js'></script>
+  <script src='js/news.js'></script>
+
+  <script src='js/slider.js'></script>
+  <script src='js/burger.js'></script>
+  <script src='js/gallery-modal.js'></script>
+
+</head>
+<body>
+  <header>
+    <div class="top">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-between top align-items-center">
+          <div class="col-6 col-lg-5">
+            <a href="#">En</a>
+            <span>English language</span>
+          </div>
+          <div class="col-6 col-lg-7 justify-content-end d-flex">
+            <a href="#">Новости</a>
+            <a href="#">Вакансии для сотрудников</a>
+            <a href="#">Контакты</a>
+            <a href="#"><img src="img/search.svg" alt="search"></a>
+            <img src="img/line.svg" alt="" class="line">
+            <a href="#"><img src="img/log-in.svg" alt="log-in"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="container-fluid">
+        <div class="row d-flex bottom align-items-center">
+          <div class="col-6 col-lg-2"><img src="img/logo.svg" alt=""></div>
+          <div class="col-lg-10 d-none d-lg-flex justify-content-end">
+            <ul>
+              <li><a href="#">О проекте</a></li>
+              <li><a href="#">Фонд "Новый дом"</a></li>
+              <li><a href="#">Поступающим</a></li>
+              <li><a href="#">Буклаб "Гагарин"</a></li>
+              <li><a href="#">Служба СПС</a></li>
+              <li><a href="#">Сведения об образовательной организации</a></li>
+            </ul>
+          </div>
+          <div class="col-6 d-lg-none d-flex justify-content-end">
+            <img src="img/burger.svg" alt="" id='burger-toggle'>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id='burger-menu' class="d-lg-none burger burger-passive burger-z-none">
+    <div class="top d-flex justify-content-between align-items-center">
+      <img src="img/logo.svg" alt="logo">
+      <div class="enter d-flex justify-content-between align-items-center">
+        <a href="#"><img src="img/log-in.svg" alt=""></a>
+        <a id='burger-close' href="#"><img src="img/close.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="base">
+      <input type="text" class='search' placeholder="Поиск...">
+      <ul>
+        <li><a href="#">О проекте</a></li>
+        <li><a href="#">Фонд "Новый дом"</a></li>
+        <li><a href="#">Поступающим</a></li>
+        <li><a href="#">Буклаб "Гагарин"</a></li>
+        <li><a href="#">Служба СПС</a></li>
+        <li><a href="#">Сведения об образовательной организации</a></li>
+      </ul>
+    </div>
+
+    <hr class="line">
+
+    <div class="bottom">
+      <ul>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Вакансии для сотрудников</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="links d-flex justify-content-between align-items-center">
+      <a href="#"><img src="img/insta.svg" alt=""></a>
+      <a href="#"><img src="img/twitter.svg" alt=""></a>
+      <a href="#"><img src="img/facebook.svg" alt=""></a>
+      <a href="#"><img src="img/youtube.svg" alt=""></a>
+      <a href="#"><img src="img/logo_vk_24.svg" alt=""></a>
+    </div>
+
+    <p class="copyrights">Copyright © ТОЧКА БУДУЩЕГО</p>
+  </div>
+
+  <section class="news">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <img src="img/News.png" alt="" class="title-pic">
+          <h2 class='section-title_news'>Новости</h2>
+          <img src="img/title-line.svg" alt="">
+        </div>
+
+        <div class="container mt">
+          <div class="row">
+            <div class="col-6 p-0 d-lg-block d-none">
+              <img class='news-big' src="img/news-1.png" alt="">
+              <span class="date-time">05.08.2020</span>
+              <span class="info">От котлована до готовых корпусов — репортерская группа «Пятницы» поб...</span>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="news-mini news-mini_1">
+                <img src="img/news-2.png" alt="">
+                <span class="date-time">05.08.2020</span>
+                <p class="description">Проект по строительству образовательного комплекса с посел ..</p>
+              </div>
+
+              <div class="news-mini news-mini_2">
+                <img src="img/news-2.png" alt="">
+                <span class="date-time">05.08.2020</span>
+                <p class="description">Стартовала программа повышения квалификации учителей Приангарья</p>
+              </div>
+
+              <div class="news-mini news-mini_3">
+                <img src="img/news-3.png" alt="">
+                <span class="date-time">05.08.2020</span>
+                <p class="description">Стартовала программа повышения квалификации учителей Приангарья</p>
+              </div>
+
+              <a href="#" class="news-link">Все новости &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="news-old">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12 d-flex flex-column">
+          <a href="#" class="elem">
+            <img src="img/old-news-1.png" alt="">
+            <span>05.08.2020</span>
+            <p>От котлована до готовых корпусов — репортерская группа «Пятницы» поб ..</p>
+          </a>
+          <a href="#" class="elem">
+            <img src="img/old-news-2.png" alt="">
+            <span>05.08.2020</span>
+            <p>От котлована до готовых корпусов — репортерская группа «Пятницы» поб ..</p>
+          </a>
+        </div>
+        <div class="col-lg-6 col-12 d-flex flex-column">
+          <a href="#" class="elem">
+            <img src="img/old-news-3.png" alt="">
+            <span>05.08.2020</span>
+            <p>От котлована до готовых корпусов — репортерская группа «Пятницы» поб ..</p>
+          </a>
+          <a href="#" class="elem">
+            <img src="img/old-news-4.png" alt="">
+            <span>05.08.2020</span>
+            <p>От котлована до готовых корпусов — репортерская группа «Пятницы» поб ..</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="top d-flex flex-column align-items-center w-100">
+          <img src="img/footer-logo.png" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut pellentesque tellus accumsan.</p>
+          <div class="social">
+            <a href="#" class="social-link social-link_inst">
+              <div class="insta icon"></div>
+            </a>
+
+            <a href="#" class="social-link social-link_twitter">
+              <div class="twitter icon"></div>
+            </a>
+
+            <a href="#" class="social-link social-link_facebook">
+              <div class="facebook icon"></div>
+            </a>
+
+            <a href="#" class="social-link social-link_youtube">
+              <div class="youtube icon"></div>
+            </a>
+
+            <a href="#" class="social-link social-link_vk">
+              <div class="vk icon"></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <p>Copyright © ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС “ТОЧКА БУДУЩЕГО”</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>

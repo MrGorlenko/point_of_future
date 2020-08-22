@@ -1,0 +1,23 @@
+.news-old{
+  margin-top: 85px;
+  span,p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #3D4B53;
+  }
+  span{
+    display: block;
+    margin: 16px 0;
+  }
+}
+
+@media (max-width: 1200px){
+  .news-old{
+    img{
+      width: 100%;
+    }
+  }
+}
