@@ -23,6 +23,7 @@
 
   <script src='js/slider.js'></script>
   <script src='js/burger.js'></script>
+  <script src='js/gallery-modal.js'></script>
 
 </head>
 <body>
@@ -407,13 +408,43 @@
         <div class="content">
           <div class="row">
             <div class="col-lg-6 col-12 p-lg-0">
-              <div class="gallery-big"></div>
+              <div id='0' class="gallery-wrapper gallery-big gallery-big-1">
+                <div class="blue">
+                  <div class="border">
+                    <img src="img/icon-eye.svg" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-lg-6 col-12 d-flex flex-wrap justify-content-between align-content-between p-lg-0">
-              <div class="gallery-small gallery-small_1"></div>
-              <div class="gallery-small gallery-small_2"></div>
-              <div class="gallery-small gallery-small_3"></div>
-              <div class="gallery-small gallery-small_4"></div>
+              <div id='1' class="gallery-wrapper gallery-small gallery-small_1">
+                <div class="blue">
+                  <div class="border">
+                    <img src="img/icon-eye.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div id='2' class="gallery-wrapper gallery-small gallery-small_2">
+                <div class="blue">
+                  <div class="border">
+                    <img src="img/icon-eye.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div id='3' class="gallery-wrapper gallery-small gallery-small_3">
+                <div class="blue">
+                  <div class="border">
+                    <img src="img/icon-eye.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div id='4' class="gallery-wrapper gallery-small gallery-small_4">
+                <div class="blue">
+                  <div class="border">
+                    <img src="img/icon-eye.svg" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -526,6 +557,56 @@
       </div>
     </div>
   </footer>
+
+  <section class="gallery-modal gallery-modal-off">
+    <div class="window">
+      <div class="gallery-modal-close" id='gallery-modal-close'><img src="img/gallery-modal-close.svg" alt=""></div>
+      <div class="swiper-container-gallery-1 gallery-top">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="content gallery-big-1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content gallery-small_1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content gallery-small_2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content gallery-small_3"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content gallery-small_4"></div>
+            </div>
+        </div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button swiper-button-prev-gallery"></div>
+        <div class="swiper-button swiper-button-next-gallery"></div>
+      </div>
+      <div class="swiper-container-gallery-2 gallery-thumbs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="content gallery-big-1"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content gallery-small_1"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content gallery-small_2"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content gallery-small_3"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content gallery-small_4"></div>
+          </div>
+      </div>
+      </div>
+    
+    </div>
+  </section>
   
 </body>
 </html>

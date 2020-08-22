@@ -1,0 +1,21 @@
+.gallery-modal{
+  width: 100%;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: #fff, $alpha: .5);
+
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-modal-off{
+  display: none !important;
+}
+
+.gallery-modal-on{
+  display: flex !important;
+}
