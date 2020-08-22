@@ -1583,6 +1583,43 @@ footer .vk {
   }
 }
 
+.history h2 {
+  margin-top: -15px;
+}
+
+.history p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3D4B53;
+}
+
+.history .mb-mob {
+  margin-bottom: 32px;
+}
+
+.history .way {
+  margin-top: 44px;
+  margin-bottom: 51px;
+}
+
+.history .way a {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1A1A1A;
+}
+
+@media (max-width: 440px) {
+  .history {
+    overflow: hidden;
+  }
+}
+
 @media (min-width: 1450px) {
   .container-fluid {
     max-width: 1440px !important;

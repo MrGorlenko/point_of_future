@@ -1,0 +1,38 @@
+.history{
+  // padding-top: 116px;
+  h2{
+    margin-top: -15px;
+  }
+
+  p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3D4B53;
+  }
+
+  .mb-mob{
+    margin-bottom: 32px;
+  }
+
+  .way{
+    margin-top: 44px;
+    margin-bottom: 51px;
+    a{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: #1A1A1A;
+    }
+  }
+}
+
+@media (max-width: 440px){
+  .history{
+    overflow: hidden;
+  }
+}
