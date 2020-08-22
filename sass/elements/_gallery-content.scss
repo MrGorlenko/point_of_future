@@ -30,6 +30,11 @@
     padding: 12px;
     transition: opacity .4s ease;
     opacity: 0;
+
+    @media screen and (max-width: 992px){
+      transition: opacity .1s ease;
+    }
+
     .border{
       height: 100%;
       width: 100%;
