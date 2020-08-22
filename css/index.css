@@ -546,6 +546,10 @@ button {
   top: 48px;
 }
 
+.news-mini img {
+  border-radius: 4px;
+}
+
 .news-mini:hover .news-mini p {
   color: linear-gradient(149.15deg, #55BA60 0%, #6ACEEC 98.07%);
   transition: color .3s ease;
@@ -564,6 +568,14 @@ button {
   line-height: 20px;
   color: #3D4B53;
   float: right;
+}
+
+@media (min-width: 993px) {
+  .news-mini img {
+    width: 160px;
+    height: 144px;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 992px) {
