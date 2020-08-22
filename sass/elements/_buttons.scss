@@ -4,11 +4,21 @@
 
 button{
   border: none;
-  outline: none;
+  outline: none !important;
   color: #FFFFFF;
   font-family: $basic-font;
   @include aligning;
   border-radius: 4px !important;
+
+}
+
+.btn-back{
+  border: 1px solid #3D4B53;
+  border-radius: 4px;
+  width: 123px;
+  height: 40px;
+  background: none;
+  color: #3D4B53;
 }
 
 .btn-reg{

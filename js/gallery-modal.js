@@ -1,19 +1,11 @@
 $(document).ready(function(){
-  let galleryPic = [$('.gallery-big-1'), $('.gallery-small_1'), $('.gallery-small_2'), $('.gallery-small_3'), $('.gallery-small_4')];
-
-  // // galleryPic.forEach(Element => console.log(Element))
-  // galleryPic.forEach(Element.on('click', function(){
-  //   alert('yo')
-  // }))
+  // let galleryPic = [$('.gallery-big-1'), $('.gallery-small_1'), $('.gallery-small_2'), $('.gallery-small_3'), $('.gallery-small_4')];
 
   $('.gallery-wrapper').each(function(index){
     $(this).on('click', function(){
       // console.log(this.attr('id'))
       let numKey = $(this).attr('id')
       numKey = parseInt(numKey, 10)
-      // console.log(typeof(numKey))
-      // console.log(numKey)
-      // console.log(typeof(int(numKey)))
 
       $('.gallery-modal').addClass('gallery-modal-on')
       $('.gallery-modal').removeClass('gallery-modal-off')

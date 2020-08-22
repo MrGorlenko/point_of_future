@@ -1,0 +1,55 @@
+.news-1{
+  padding-top: 32px;
+  span{
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  h3{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #3D4B53;
+  }
+
+  p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #3D4B53;
+  }
+
+  button{
+    margin-bottom: 32px;
+  }
+
+  h2{
+    color: #000000;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .news-mini{
+    border-bottom: 1px solid #C7C7C7 !important;
+
+    &:last-child{
+      border-bottom: none !important ;
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .col-6:first-child{
+    img{
+      width: 100%;
+    }
+  }
+}

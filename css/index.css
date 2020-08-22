@@ -131,13 +131,22 @@ header .bottom a:hover {
 
 button {
   border: none;
-  outline: none;
+  outline: none !important;
   color: #FFFFFF;
   font-family: "Inter";
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 4px !important;
+}
+
+.btn-back {
+  border: 1px solid #3D4B53;
+  border-radius: 4px;
+  width: 123px;
+  height: 40px;
+  background: none;
+  color: #3D4B53;
 }
 
 .btn-reg {
@@ -1504,6 +1513,61 @@ footer .vk {
 
 @media (max-width: 1200px) {
   .news-old img {
+    width: 100%;
+  }
+}
+
+.news-1 {
+  padding-top: 32px;
+}
+
+.news-1 span {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.news-1 h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #3D4B53;
+}
+
+.news-1 p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3D4B53;
+}
+
+.news-1 button {
+  margin-bottom: 32px;
+}
+
+.news-1 h2 {
+  color: #000000;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.news-1 .news-mini {
+  border-bottom: 1px solid #C7C7C7 !important;
+}
+
+.news-1 .news-mini:last-child {
+  border-bottom: none !important;
+}
+
+@media (max-width: 1200px) {
+  .col-6:first-child img {
     width: 100%;
   }
 }
