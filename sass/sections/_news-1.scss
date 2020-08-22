@@ -47,9 +47,23 @@
 }
 
 @media (max-width: 1200px){
-  .col-6:first-child{
-    img{
-      width: 100%;
+  .news-1{
+    .col-lg-6:first-child{
+      img{
+        width: 100%;
+      }
+    }
+
+    // .news-mini{
+    //   border-bottom: none ;
+    // }
+  }
+}
+
+@media (max-width: 992px){
+  .news-1{
+    .news-mini{
+      border-bottom: none !important;
     }
   }
 }

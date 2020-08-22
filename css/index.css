@@ -796,27 +796,29 @@ button {
 
 @media (max-width: 992px) {
   .news-mini {
-    height: 384px;
+    height: 165px;
     border-bottom: none;
+    border-top: 1px solid #C7C7C7;
+    padding-top: 24px;
   }
-  .news-mini span, .news-mini p {
-    position: relative;
-    left: 0;
-    top: initial;
+  .news-mini p, .news-mini span {
+    left: 94px;
+  }
+  .news-mini img {
+    width: 78px;
+    height: 70px;
+    object-fit: cover;
   }
   .news-mini .date-time {
-    margin-top: 16px !important;
     margin-bottom: 16px !important;
     display: block;
+    top: 17px;
+  }
+  .news-mini:last-child {
+    border-bottom: none;
   }
   .news-link {
     display: none;
-  }
-}
-
-@media (max-width: 400px) {
-  .news-mini img {
-    width: 100%;
   }
 }
 
@@ -1310,6 +1312,9 @@ button {
   .news {
     margin-top: 32px;
   }
+  .news .mt-mob {
+    margin-top: 24px;
+  }
 }
 
 .form {
@@ -1567,8 +1572,14 @@ footer .vk {
 }
 
 @media (max-width: 1200px) {
-  .col-6:first-child img {
+  .news-1 .col-lg-6:first-child img {
     width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .news-1 .news-mini {
+    border-bottom: none !important;
   }
 }
 
