@@ -116,7 +116,7 @@ header .bottom a:hover {
     display: none;
   }
   header .bottom .col-6:first-child img {
-    width: 128px;
+    width: auto;
   }
   header .bottom .col-6:last-child img {
     width: 24px;
