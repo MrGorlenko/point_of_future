@@ -161,7 +161,7 @@ button {
   width: 136px;
   height: 48px;
   background: #55BA60;
-  border-radius: 5000px;
+  border-radius: 5000px !important;
 }
 
 .swiper-element {
@@ -471,11 +471,13 @@ button {
   width: 540px;
   height: 444px;
   background-image: url("../img/gallery-1.png");
+  border-radius: 4px;
 }
 
 .gallery-content .gallery-small {
   width: 255px;
   height: 207px;
+  border-radius: 4px;
 }
 
 .gallery-content .gallery-small_1 {
@@ -501,6 +503,39 @@ button {
   .gallery-content .gallery-small {
     width: 227px;
     height: 210px;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery-content .buttons {
+    width: 295px;
+    font-size: 14px;
+    margin-top: 24px;
+  }
+  .gallery-content .gallery-big {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 230px;
+  }
+  .gallery-content .gallery-small {
+    width: 150px;
+    height: 140px;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 345px) {
+  .gallery-content .gallery-big {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 230px;
+  }
+  .gallery-content .gallery-small {
+    width: 130px;
+    height: 100px;
+    margin-top: 24px;
   }
 }
 
@@ -588,9 +623,6 @@ button {
     left: 0;
     top: initial;
   }
-  .news-mini img {
-    width: 100%;
-  }
   .news-mini .date-time {
     margin-top: 16px !important;
     margin-bottom: 16px !important;
@@ -598,6 +630,12 @@ button {
   }
   .news-link {
     display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .news-mini img {
+    width: 100%;
   }
 }
 
@@ -649,6 +687,26 @@ button {
 .form form button {
   float: right;
   margin-top: 16px;
+}
+
+@media (max-width: 992px) {
+  .form form {
+    margin: auto;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  .form form .wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    padding: 24px;
+    height: 412px;
+    margin-top: 45px;
+  }
+  .form form select, .form form .long, .form form input {
+    width: 100%;
+  }
 }
 
 .burger {
@@ -970,6 +1028,10 @@ button {
   margin-top: 75px;
 }
 
+.gallery img {
+  border-radius: 4px;
+}
+
 .gallery p {
   width: 730px;
   margin: auto;
@@ -977,6 +1039,12 @@ button {
   margin-top: 32px;
   margin-bottom: 40px;
   color: #3D4B53;
+}
+
+@media (max-width: 992px) {
+  .gallery p {
+    display: none;
+  }
 }
 
 .news {
@@ -1021,6 +1089,15 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 100px;
+}
+
+@media (max-width: 992px) {
+  .form {
+    background: none;
+    margin-top: 32px;
+    padding-bottom: 20px;
+    height: 645px;
+  }
 }
 
 footer {
@@ -1150,6 +1227,16 @@ footer .vk {
   background-image: url("../img/logo_vk_24.svg");
 }
 
+@media (max-width: 992px) {
+  footer p {
+    width: 300px;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+
 @media (min-width: 1450px) {
   .container-fluid {
     max-width: 1440px !important;
@@ -1172,11 +1259,5 @@ footer .vk {
 
 .display_none {
   display: none !important;
-}
-
-@media (max-width: 992px) {
-  .gallery, .form, footer {
-    display: none !important;
-  }
 }
 /*# sourceMappingURL=index.css.map */

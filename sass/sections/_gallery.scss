@@ -1,6 +1,10 @@
 .gallery{
   margin-top: 75px;
 
+  img{
+    border-radius: 4px;
+  }
+
   p{
     width: 730px;
     margin: auto;
@@ -8,5 +12,13 @@
     margin-top: 32px;
     margin-bottom: 40px;
     color: #3D4B53;
+  }
+}
+
+@media (max-width: 992px){
+  .gallery{
+    p{
+      display: none;
+    }
   }
 }

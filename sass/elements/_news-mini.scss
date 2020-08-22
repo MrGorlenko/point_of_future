@@ -91,9 +91,9 @@
       top: initial;
     }
 
-    img{
-      width: 100%;
-    }
+    // img{
+      // width: 100%;
+    // }
 
     .date-time{
       margin-top: 16px !important;
@@ -103,5 +103,13 @@
   }
   .news-link{
     display: none;
+  }
+}
+
+@media (max-width: 400px){
+  .news-mini{
+    img{
+      width: 100%;
+    }
   }
 }

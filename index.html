@@ -406,10 +406,10 @@
 
         <div class="content">
           <div class="row">
-            <div class="col-6 p-0">
+            <div class="col-lg-6 col-12 p-lg-0">
               <div class="gallery-big"></div>
             </div>
-            <div class="col-6 d-flex flex-wrap justify-content-between align-content-between p-0">
+            <div class="col-lg-6 col-12 d-flex flex-wrap justify-content-between align-content-between p-lg-0">
               <div class="gallery-small gallery-small_1"></div>
               <div class="gallery-small gallery-small_2"></div>
               <div class="gallery-small gallery-small_3"></div>
@@ -468,22 +468,23 @@
   <section class="form">
     <div class="container h-100">
       <div class="row h-100">
-        <div class="col-6 d-flex align-items-center p-0">
+        <div class="col-lg-6 col-12 d-flex align-items-center p-lg-0">
           <form action="#">
             <div class="section-title">
               <img src="img/ask.png" alt="" class="title-pic">
               <h2>Спросить</h2>
               <img src="img/title-line.svg" alt="">
             </div>
-            <select name="excursion" id="excursion">
-              <option value="volvo"> Запись на экскурсию</option>
-              <option value="saab">Запись на 1</option>
-              <option value="mercedes">Запись на 2</option>
-            </select>
-            <input class='short' type="text" placeholder="example@mail.ru">
-            <textarea class='long' name="comment" cols="40" rows="3"></textarea>
-            <button class='btn-ask'>Отправить</button>
-
+            <div class="wrapper">
+              <select name="excursion" id="excursion">
+                <option value="volvo"> Запись на экскурсию</option>
+                <option value="saab">Запись на 1</option>
+                <option value="mercedes">Запись на 2</option>
+              </select>
+              <input class='short' type="text" placeholder="example@mail.ru">
+              <textarea class='long' name="comment" cols="40" rows="3"></textarea>
+              <button class='btn-ask'>Отправить</button>
+            </div>
           </form>
         </div>
       </div>

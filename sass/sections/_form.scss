@@ -8,3 +8,13 @@
 
   margin-top: 100px;
 }
+
+@media (max-width: 992px){
+  .form{
+    background: none;
+
+    margin-top: 32px;
+    padding-bottom: 20px;
+    height: 645px;
+  }
+}
