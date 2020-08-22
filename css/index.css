@@ -147,6 +147,54 @@ button {
   font-size: 14px;
 }
 
+.btn-video {
+  background-color: none;
+  transition: background-color .2s ease;
+  display: block;
+  width: 175px;
+  font-family: "Inter";
+  color: #3D4B53;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.btn-video img {
+  margin-right: 11px;
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 1440px) {
+  .btn-video img {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .btn-video img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.btn-video:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color .2s ease;
+  text-decoration: none;
+  color: #3D4B53;
+}
+
+@media screen and (max-width: 992px) {
+  .btn-video {
+    border: 1px solid #3D4B53;
+    border-radius: 4px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+  }
+}
+
 .btn-request {
   background: #55BA60;
   width: 191px;
@@ -992,6 +1040,10 @@ button {
   height: 640px;
 }
 
+.hero .buttons {
+  width: 85%;
+}
+
 .hero .circle {
   width: 1075px;
   height: 1075px;
@@ -1011,6 +1063,12 @@ button {
   }
 }
 
+@media (max-width: 1200px) {
+  .hero .buttons {
+    width: 100%;
+  }
+}
+
 @media (max-width: 992px) {
   .hero {
     height: 472px;
@@ -1020,6 +1078,12 @@ button {
     height: 480px;
     right: -180px;
     top: -180px;
+  }
+  .hero .buttons {
+    width: 191px;
+  }
+  .hero .buttons .btn-video {
+    margin-top: 16px;
   }
 }
 
@@ -1254,6 +1318,7 @@ button {
     margin-top: 32px;
     padding-bottom: 20px;
     height: 645px;
+    overflow: hidden;
   }
 }
 

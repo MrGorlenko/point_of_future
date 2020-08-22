@@ -8,6 +8,10 @@ $circle-coords: -220px;
   background: linear-gradient(90deg, rgba(185, 212, 228, 0.2) -3.57%, rgba(185, 212, 228, 0.2) 103.93%);
   height: 640px;
 
+  .buttons{
+    width: 85%;
+  }
+
   .circle{
     width: $circle-size;
     height: $circle-size;
@@ -32,6 +36,14 @@ $circle-coords: -220px;
   }
 }
 
+@media (max-width: 1200px){
+  .hero{
+    .buttons{
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: 992px){
   $circle-size: 480px;
   $circle-coords: -180px;
@@ -43,6 +55,13 @@ $circle-coords: -220px;
       height: $circle-size;
       right: $circle-coords;
       top: $circle-coords;
+    }
+
+    .buttons{
+      width: 191px;
+      .btn-video{
+        margin-top: 16px;
+      }
     }
   }
 }
