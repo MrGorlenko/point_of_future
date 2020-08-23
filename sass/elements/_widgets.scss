@@ -53,7 +53,7 @@
 
 .widget_about_bg{
   width: 100%;
-  height: 200vh;
+  height: 100vh;
   position: absolute;
   top: 426px;
   background-color: rgba($color: #000000, $alpha: .4);
@@ -73,7 +73,7 @@ $widget-search-width: 420px;
 
 .widget-search-wrapper{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   top: 0;
   background-color: rgba($color: #000000, $alpha: .6);
