@@ -44,8 +44,10 @@
 
 .widget_about_off{
   opacity: 0;
+  z-index: 0;
 }
 
 .widget_about_on{
   opacity: 1;
+  z-index: 10;
 }
