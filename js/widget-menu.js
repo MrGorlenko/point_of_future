@@ -48,7 +48,6 @@ $(document).ready(function(){
 
   /* SEARCH WIDGET */
 
-  // call-search-widget
   $("#call-search-widget").click(function(){
     $('.widget-search-wrapper').addClass('widget-search-wrapper-on')
     $('.widget-search-wrapper').removeClass('widget-search-wrapper-off')
@@ -66,4 +65,18 @@ $(document).ready(function(){
   })
 
   /* SEARCH WIDGET */
+
+  /* FORM WIDGET */
+
+  $('#call-form').click(function(){
+    $('.widget-form-wrapper').removeClass('widget-off')
+    $('.widget-form-wrapper').addClass('widget-on')
+  })
+
+  $('#widget-form-close').click(function(){
+    $('.widget-form-wrapper').addClass('widget-off')
+    $('.widget-form-wrapper').removeClass('widget-on')
+  })
+
+  /* FORM WIDGET */
 })

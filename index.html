@@ -42,7 +42,7 @@
             <a href="#">Новости</a>
             <a href="#">Вакансии для сотрудников</a>
             <a href="#">Контакты</a>
-            <a href="#"><img src="img/search.svg" alt="search"></a>
+            <a id='call-search-widget' href="#"><img src="img/search.svg" alt="search"></a>
             <img src="img/line.svg" alt="" class="line">
             <a href="#"><img src="img/log-in.svg" alt="log-in"></a>
           </div>
@@ -137,6 +137,53 @@
     </div>
   </div>
 
+  <div class="widget-off widget-form-wrapper d-flex justify-content-center">
+    <form action="">
+      <img id='widget-form-close' src="img/form-widget-close.svg" alt="">
+      <h2>Анкета заинтересованности</h2>
+      <div class="steps row justify-content-between align-items-center">
+        <div class='green'>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+      <h3>Представьтесь, пожалуйста</h3>
+      <input type="text" placeholder='Например: Иванов Иван Иванович'>
+      <div class="row">
+        <div class="col-6">
+          <h3>Дата рождения</h3>
+          <input type="text" placeholder="01.01.2020"> 
+        </div>
+        <div class="col-6 p-0">
+          <h3>Ваш пол</h3>
+          <div class="row w-100 m-0">
+            <button class="btn-sex btn-sex-active">Женский</button>
+            <button class="btn-sex">Мужской</button>
+          </div>
+        </div>
+      </div>
+      <h3>Укажите Ваши контактные данные: </h3>
+      <input type="text" placeholder="8 (000) 0000 000">
+      <h3>Электронная почта</h3>
+      <input type="text" placeholder="example@mail.ru">
+      <span>На указанную почту будут отправлены данные о регистрации</span>
+      <h3>Фактический адрес проживания: </h3>
+      <input type="text" placeholder="Укажите город, улицу/микрорайон, дом, квартиру">
+      <!-- <div class="button-wrapper d-flex justify-content-end">    -->
+        <button class="btn-next">Далее &rarr;</button>
+      <!-- </div> -->
+      <p>
+        Возникли проблемы с заполнением анкеты? Пожалуйста, сообщите нам <a href="#">help@tbedu.ru</a> | Политика обработки персональных данных
+      </p>
+    </form>
+  </div>
+
   <section class="hero">
      <div class="circle"></div>
     <div class="container-fluid h-100">
@@ -152,7 +199,7 @@
           <h2>Образовательный комплекс</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam amet, tellus et amet, bibendum. Porttitor quis amet amet elementum. Nulla nunc orci.</p>
           <div class="buttons d-block d-lg-flex justify-content-between">
-            <button class='btn-request'>Оставить заявку</button>
+            <button id='call-form' class='btn-request'>Оставить заявку</button>
             <a target="_blank" href="https://youtu.be/YvjwMYCFhsU" class='btn-video d-flex align-items-center'> <img class='d-block' src="img/video.svg" alt="">Смотреть видео</a>
           </div>
         </div>

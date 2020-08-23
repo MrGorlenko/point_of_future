@@ -28,15 +28,48 @@ button{
   font-size: $basic-font-size;
 }
 
+.btn-next{
+  background: #55BA60;
+  border-radius: 4px;
+  width: 118px;
+  height: 40px;
+  margin-top: 24px;
+  float: right;
+}
+
+.btn-sex{
+  width: 100px;
+  height: 40px;
+  border-radius: 5000px !important;
+  color: #1A1A1A;
+  @media screen and (max-width: 576px){
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  &:last-child{
+    margin-left: 8px;
+    @media screen and (max-width: 576px){
+      margin-left: 0;
+    }
+  }
+
+  &-active{
+    background: #6ACEEC;
+    color: #fff;
+  }
+}
+
 .btn-video{
   background-color: none;
   transition: background-color .2s ease;
   display: block;
-  width: 175px;
+  // width: 175px;
   font-family: $basic-font;
   color: #3D4B53;
   font-size: 14px;
   border-radius: 4px;
+  padding-left: 16px;
+  width: 48%;
   img{
     margin-right: 11px;
     width: 40px;

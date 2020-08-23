@@ -161,15 +161,54 @@ button {
   font-size: 14px;
 }
 
+.btn-next {
+  background: #55BA60;
+  border-radius: 4px;
+  width: 118px;
+  height: 40px;
+  margin-top: 24px;
+  float: right;
+}
+
+.btn-sex {
+  width: 100px;
+  height: 40px;
+  border-radius: 5000px !important;
+  color: #1A1A1A;
+}
+
+@media screen and (max-width: 576px) {
+  .btn-sex {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+.btn-sex:last-child {
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 576px) {
+  .btn-sex:last-child {
+    margin-left: 0;
+  }
+}
+
+.btn-sex-active {
+  background: #6ACEEC;
+  color: #fff;
+}
+
 .btn-video {
   background-color: none;
   transition: background-color .2s ease;
   display: block;
-  width: 175px;
   font-family: "Inter";
   color: #3D4B53;
   font-size: 14px;
   border-radius: 4px;
+  padding-left: 16px;
+  width: 48%;
 }
 
 .btn-video img {
@@ -1164,6 +1203,161 @@ button {
 
 .widget_search_on {
   right: 0;
+}
+
+.widget-form-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: opacity .3s ease;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .widget-form-wrapper {
+    align-items: start;
+  }
+}
+
+.widget-form-wrapper form {
+  width: 444px;
+  height: 675px;
+  padding: 24px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 576px) {
+  .widget-form-wrapper form {
+    width: 320px;
+    height: 100vh;
+    overflow: scroll;
+  }
+}
+
+.widget-form-wrapper form img {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.widget-form-wrapper form h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3D4B53;
+}
+
+.widget-form-wrapper form .steps {
+  width: 100%;
+  margin: auto;
+}
+
+.widget-form-wrapper form .steps .green {
+  background: #55BA60;
+  color: white;
+}
+
+.widget-form-wrapper form .steps .green::before {
+  background: #55BA60;
+}
+
+@media screen and (max-width: 576px) {
+  .widget-form-wrapper form .steps .green::before {
+    display: none;
+  }
+}
+
+.widget-form-wrapper form .steps div {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #F1F6FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.widget-form-wrapper form .steps div::before {
+  position: absolute;
+  display: block;
+  width: 17px;
+  height: 2px;
+  top: 11px;
+  left: -17px;
+  content: '';
+  background: #F1F6FA;
+}
+
+@media screen and (max-width: 576px) {
+  .widget-form-wrapper form .steps div::before {
+    display: none;
+  }
+}
+
+.widget-form-wrapper form .steps div:first-child::before {
+  display: none;
+}
+
+.widget-form-wrapper form input {
+  width: 100%;
+  border: 1px solid #C7C7C7;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+
+.widget-form-wrapper form h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  margin-top: 16px;
+  color: #3D4B53;
+}
+
+.widget-form-wrapper form span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3D4B53;
+}
+
+.widget-form-wrapper form p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #3D4B53;
+  margin-top: 24px;
+}
+
+.widget-form-wrapper form .button-wrapper {
+  width: 100%;
+  padding-top: 24px;
+}
+
+.widget-on {
+  z-index: 5;
+  opacity: 1;
+}
+
+.widget-off {
+  z-index: -1;
+  opacity: 0;
 }
 
 @media (max-width: 992px) {
