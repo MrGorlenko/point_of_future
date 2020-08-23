@@ -10,19 +10,27 @@ $(document).ready(function(){
       case 0:
         $(".widget_about").addClass('widget_about_on');
         $(".widget_about").removeClass('widget_about_off');
+        $('.widget_about_bg').addClass('widget_about_bg_on')
+        $('.widget_about_bg').removeClass('widget_about_bg_off')
+
         break;
       default:
         $(".widget_about").removeClass('widget_about_on');
         $(".widget_about").addClass('widget_about_off');
+        $('.widget_about_bg').removeClass('widget_about_bg_on')
+        $('.widget_about_bg').addClass('widget_about_bg_off')
         break;
     }
   })
 
-  $('section').on('mouseover', function(){
+  $('.widget_about_bg').on('mouseover', function(){
     $(".widget_about").removeClass('widget_about_on');
     $(".widget_about").addClass('widget_about_off');
+    $('.widget_about_bg').removeClass('widget_about_bg_on')
+    $('.widget_about_bg').addClass('widget_about_bg_off')
     counter = 1;
   })
+
 
   $('#widget-list li').each(function(index){
     $(this).on('mouseover', function(){

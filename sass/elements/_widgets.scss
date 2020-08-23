@@ -51,6 +51,24 @@
   z-index: 10;
 }
 
+.widget_about_bg{
+  width: 100%;
+  height: 200vh;
+  position: absolute;
+  top: 426px;
+  background-color: rgba($color: #000000, $alpha: .4);
+}
+
+.widget_about_bg_off{
+  opacity: 0;
+  z-index: 0;
+}
+
+.widget_about_bg_on{
+  opacity: 1;
+  z-index: 10;
+}
+
 $widget-search-width: 420px;
 
 .widget-search-wrapper{
