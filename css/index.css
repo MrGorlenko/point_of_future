@@ -1161,6 +1161,15 @@ button {
   right: 0;
 }
 
+@media (max-width: 992px) {
+  .widget_about {
+    display: none;
+  }
+  .widget_search {
+    display: none;
+  }
+}
+
 .hero {
   position: relative;
   width: 100%;
