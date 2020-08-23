@@ -78,6 +78,7 @@ $widget-search-width: 420px;
   top: 0;
   background-color: rgba($color: #000000, $alpha: .6);
   transition: opacity .3 ease;
+  overflow: hidden;
   // z-index: 12;
 }
 
