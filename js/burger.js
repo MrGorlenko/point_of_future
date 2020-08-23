@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  let sections = '.hero, .about, .founders, .news, .footer, .news-old';
+  let sections = 'section, footer';
 
   let burger_z = function(){
     $('.burger').addClass('burger-z')

@@ -1,0 +1,51 @@
+.widget_about{
+  transition: opacity .3s ease;
+  background: #fff;
+  padding: 40px 0;
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 146px;
+
+
+  h2{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #3D4B53;
+  }
+
+  ul{
+    padding-left: 0;
+    li{
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      img{
+        margin-right: 10px;
+        width: 24px;
+        height: 24px;
+        display: none;
+      }
+
+      a{
+        color: #3D4B53;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.widget_about_off{
+  opacity: 0;
+}
+
+.widget_about_on{
+  opacity: 1;
+}
