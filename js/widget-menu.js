@@ -1,26 +1,10 @@
 $(document).ready(function(){
 
-
-  // about-widget-call
+  /* ABOUT WIDGET */
 
   let counter = 1;
-  // $('#about-widget-call').click(function(){
-    // counter++;
-    // switch (counter%2){
-    //   case 0:
-    //     $(".widget_about").addClass('widget_about_on');
-    //     $(".widget_about").removeClass('widget_about_off');
-    //     break;
-    //   default:
-    //     $(".widget_about").removeClass('widget_about_on');
-    //     $(".widget_about").addClass('widget_about_off');
-    //     break;
-    // }
-  // })
 
   $('#about-widget-call').on('mouseover', function(){
-    // $(".widget_about").addClass('widget_about_on');
-    // $(".widget_about").removeClass('widget_about_off');
     counter++;
     switch (counter%2){
       case 0:
@@ -40,17 +24,6 @@ $(document).ready(function(){
     counter = 1;
   })
 
-  // $("#about-widget-call").on('mouseover', function(){
-  //   console.log('a')
-  // })
-
-  // $('.widget_about').on('mouseout', function(){
-  //   $(".widget_about").removeClass('widget_about_on');
-  //   $(".widget_about").addClass('widget_about_off');
-  // })
-
-
-
   $('#widget-list li').each(function(index){
     $(this).on('mouseover', function(){
       $(this).children().first().css('display', 'block')
@@ -61,4 +34,28 @@ $(document).ready(function(){
       $(this).children().css('color', '#3D4B53');
     })
   })
+
+  /* ABOUT WIDGET */
+
+
+  /* SEARCH WIDGET */
+
+  // call-search-widget
+  $("#call-search-widget").click(function(){
+    $('.widget-search-wrapper').addClass('widget-search-wrapper-on')
+    $('.widget-search-wrapper').removeClass('widget-search-wrapper-off')
+
+    $('.widget_search').addClass('widget_search_on')
+    $('.widget_search').removeClass('widget_search_off')
+  })
+
+  $('#search-widget-close').click(function(){
+    $('.widget-search-wrapper').removeClass('widget-search-wrapper-on')
+    $('.widget-search-wrapper').addClass('widget-search-wrapper-off')
+
+    $('.widget_search').removeClass('widget_search_on')
+    $('.widget_search').addClass('widget_search_off')
+  })
+
+  /* SEARCH WIDGET */
 })
