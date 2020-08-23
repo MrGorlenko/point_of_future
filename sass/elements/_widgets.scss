@@ -136,7 +136,7 @@ $widget-search-width: 420px;
     border-radius: 4px;
 
     @media screen and (max-width: 576px){
-      width: 320px;
+      width: 100%;
       height: 100vh;  
       overflow: scroll;
     }
@@ -211,6 +211,7 @@ $widget-search-width: 420px;
       border: 1px solid #C7C7C7;
       border-radius: 4px;
       padding: 10px 16px;
+      outline: none !important;
     }
 
     h3{
