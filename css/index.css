@@ -13,6 +13,10 @@ header .top .col-lg-5 a, header .top .col-lg-5 span {
   font-size: 14px;
 }
 
+header .top span {
+  margin-left: 16px;
+}
+
 header .top a {
   margin-left: 24px;
   font-size: 14px;
@@ -44,7 +48,7 @@ header .bottom {
 
 header .bottom img {
   width: 204px;
-  height: 50px;
+  height: 60px;
 }
 
 header .bottom ul {

@@ -16,6 +16,9 @@ header{
         font-size: 14px;
       }
     }
+    span{
+      margin-left: 16px;
+    }
     a{
       margin-left: $distance;
       font-size: $basic-font-size;
@@ -48,7 +51,7 @@ header{
     height: 96px;
     img{
       width: 204px;
-      height: 50px;
+      height: 60px;
     }
     ul{
       text-decoration: none;
