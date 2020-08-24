@@ -255,6 +255,19 @@ $widget-search-width: 420px;
   
 }
 
+.way{
+  margin-top: 44px;
+  margin-bottom: 51px;
+  a{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1A1A1A;
+  }
+}
+
 .widget-on{
   z-index: 5;
   opacity: 1;

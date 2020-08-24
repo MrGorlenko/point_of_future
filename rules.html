@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>История</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src='js-lib/jquery.js'></script>
+  <script src='js/version.js'></script>
+  <script src='js/news.js'></script>
+
+  <script src='js/slider.js'></script>
+  <script src='js/burger.js'></script>
+  <script src='js/gallery-modal.js'></script>
+
+  <script src='js/widget-menu.js'></script>
+
+</head>
+<body>
+  <header>
+    <div class="top">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-between top align-items-center">
+          <div class="col-6 col-lg-5">
+            <a href="#">En</a>
+            <span>English language</span>
+          </div>
+          <div class="col-6 col-lg-7 justify-content-end d-flex">
+            <a href="#">Новости</a>
+            <a href="#">Вакансии для сотрудников</a>
+            <a href="#">Контакты</a>
+            <a id='call-search-widget' href="#"><img src="img/search.svg" alt="search"></a>
+            <img src="img/line.svg" alt="" class="line">
+            <a href="#"><img src="img/log-in.svg" alt="log-in"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="container-fluid">
+        <div class="row d-flex bottom align-items-center">
+          <div class="col-6 col-lg-2"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
+          <div class="col-lg-10 d-none d-lg-flex justify-content-end">
+            <ul>
+              <li><a id='about-widget-call' href="#">О проекте</a></li>
+              <li><a href="#">Фонд "Новый дом"</a></li>
+              <li><a href="#">Поступающим</a></li>
+              <li><a href="#">Буклаб "Гагарин"</a></li>
+              <li><a href="#">Служба СПС</a></li>
+              <li><a href="#">Сведения об образовательной организации</a></li>
+            </ul>
+          </div>
+          <div class="col-6 d-lg-none d-flex justify-content-end">
+            <img src="img/burger.svg" alt="" id='burger-toggle'>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="widget_about widget_about_off">
+    <div class="container">
+      <div class="row">
+        <div class="col-6"><img src="img/widget-about.png" alt=""></div>
+        <div class="col-6">
+          <h2>О проекте</h2>
+          <ul id='widget-list'>
+            <li> <img src="img/arrow-right-green.svg" alt=""> <a href="#">Об образовательном комплексе</a></li>
+            <li> <img src="img/arrow-right-green.svg" alt=""> <a href="#">Архитектура</a></li>
+            <li> <img src="img/arrow-right-green.svg" alt=""> <a href="#">Команда</a></li>
+            <li> <img src="img/arrow-right-green.svg" alt=""> <a href="#">СМИ о нас</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="widget_about_bg widget_about_bg_off"></div>
+
+  <div class="widget-search-wrapper widget-search-wrapper-off">
+    <div class="widget_search widget_search_off">
+      <img id='search-widget-close' src="img/widget-close.svg" alt="">
+      <input type="text" class='search-input' placeholder="Поиск...">
+    </div>
+  </div>
+
+  <div id='burger-menu' class="d-lg-none burger burger-passive burger-z-none">
+    <div class="top d-flex justify-content-between align-items-center">
+      <img src="img/logo.svg" alt="logo">
+      <div class="enter d-flex justify-content-between align-items-center">
+        <a href="#"><img src="img/log-in.svg" alt=""></a>
+        <a id='burger-close' href="#"><img src="img/close.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="base">
+      <input type="text" class='search-input' placeholder="Поиск...">
+      <ul>
+        <li><a href="#">О проекте</a></li>
+        <li><a href="#">Фонд "Новый дом"</a></li>
+        <li><a href="#">Поступающим</a></li>
+        <li><a href="#">Буклаб "Гагарин"</a></li>
+        <li><a href="#">Служба СПС</a></li>
+        <li><a href="#">Сведения об образовательной организации</a></li>
+      </ul>
+    </div>
+
+    <hr class="line">
+
+    <div class="bottom">
+      <ul>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Вакансии для сотрудников</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="links d-flex justify-content-between align-items-center">
+      <a href="#"><img src="img/insta.svg" alt=""></a>
+      <a href="#"><img src="img/twitter.svg" alt=""></a>
+      <a href="#"><img src="img/facebook.svg" alt=""></a>
+      <a href="#"><img src="img/youtube.svg" alt=""></a>
+      <a href="#"><img src="img/logo_vk_24.svg" alt=""></a>
+    </div>
+
+    <p class="copyrights">Copyright © ТОЧКА БУДУЩЕГО</p>
+  </div>
+
+  <section class="documents">
+    <div class="container">
+      <div class="way">
+        <a href="#">РОДИТЕЛЯМ</a> &rarr;
+        <a href="#">Правила приема</a>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <img class='subwrite' src="img/dear-parents.svg" alt="">
+          <h2 class='first-title'>Уважаемые родители!</h2>
+          <img class='lines' src="img/lines.svg" alt="">
+          <p>Учредитель образовательного комплекса утвердил <a href="#">ПРАВИЛА ПРИЕМА И ПЕРЕВОДА ГРАЖДАН</a> в Частное общеобразовательное учреждение "Образовательный комплекс "Точка будущего" на 2020-2021 учебный год. Предлагаем документ для ознакомления.</p>
+        </div>
+        <div class="col-12">
+          <div class="document d-flex justify-content-between align-items-center height w-100">
+            <p>Правила приема и перевода граждан в ЧОУ "Точка будущего" на 2020-2021 учебный год</p>
+            <a href="#"><span>Открыть</span> <img src="img/pdf.svg" alt=""></a>
+          </div>
+          <div class="document d-flex justify-content-between align-items-center height w-100">
+            <p>Правила приема и перевода граждан в ЧОУ "Точка будущего" на 2020-2021 учебный год</p>
+            <a href="#"><span>Открыть</span> <img src="img/pdf.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="top d-flex flex-column align-items-center w-100">
+          <img src="img/footer-logo.png" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut pellentesque tellus accumsan.</p>
+          <div class="social">
+            <a href="#" class="social-link social-link_inst">
+              <div class="insta icon"></div>
+            </a>
+
+            <a href="#" class="social-link social-link_twitter">
+              <div class="twitter icon"></div>
+            </a>
+
+            <a href="#" class="social-link social-link_facebook">
+              <div class="facebook icon"></div>
+            </a>
+
+            <a href="#" class="social-link social-link_youtube">
+              <div class="youtube icon"></div>
+            </a>
+
+            <a href="#" class="social-link social-link_vk">
+              <div class="vk icon"></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <p>Copyright © ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС “ТОЧКА БУДУЩЕГО”</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
