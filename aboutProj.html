@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+
+  <script src='js-lib/jquery.js'></script>
+  <script src='js/version.js'></script>
+  <script src='js/news.js'></script>
+
+  <script src='js/slider.js'></script>
+  <script src='js/burger.js'></script>
+  <script src='js/gallery-modal.js'></script>
+
+  <script src='js/widget-menu.js'></script>
+  <script src='js/jaw.js'></script>
+
+</head>
+<body>
+
+<div id="app">
+
+  <header>
+    <div class="top">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-between top align-items-center">
+          <div class="col-6 col-lg-5">
+            <a href="#">En</a>
+            <span>English language</span>
+          </div>
+          <div class="col-6 col-lg-7 justify-content-end d-flex">
+            <a href="#">Новости</a>
+            <a href="#">Вакансии для сотрудников</a>
+            <a href="#">Контакты</a>
+            <a id='call-search-widget' href="#"><img src="img/search.svg" alt="search"></a>
+            <img src="img/line.svg" alt="" class="line">
+            <a href="#"><img src="img/log-in.svg" alt="log-in"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="container-fluid">
+        <div class="row d-flex bottom align-items-center">
+          <div class="col-6 col-lg-2"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
+          <div class="col-lg-10 d-none d-lg-flex justify-content-end">
+            <ul>
+              <li><a id='about-widget-call' href="#">О проекте</a></li>
+              <li><a href="#">Фонд "Новый дом"</a></li>
+              <li><a href="#">Поступающим</a></li>
+              <li><a href="#">Буклаб "Гагарин"</a></li>
+              <li><a href="#">Служба СПС</a></li>
+              <li><a href="#">Сведения об образовательной организации</a></li>
+            </ul>
+          </div>
+          <div class="col-6 d-lg-none d-flex justify-content-end">
+            <img src="img/burger.svg" alt="" id='burger-toggle'>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="widget_about widget_about_off">
+    <div class="container">
+      <div class="row">
+        <div class="col-6"><img src="img/widget-about.png" alt=""></div>
+        <div class="col-6">
+          <h2>О проекте</h2>
+          <ul id='widget-list'>
+            <li> <img src="img/arrow-right-green.svg" alt=""> <a href="#">Об образовательном комплексе</a></li>
+            <li> <img src="img/arrow-right-green.svg" alt=""> <a href="#">Архитектура</a></li>
+            <li> <img src="img/arrow-right-green.svg" alt=""> <a href="#">Команда</a></li>
+            <li> <img src="img/arrow-right-green.svg" alt=""> <a href="#">СМИ о нас</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="widget_about_bg widget_about_bg_off"></div>
+
+  <div id='burger-menu' class="d-lg-none burger burger-passive burger-z-none">
+    <div class="top d-flex justify-content-between align-items-center">
+      <img src="img/logo.svg" alt="logo">
+      <div class="enter d-flex justify-content-between align-items-center">
+        <a href="#"><img src="img/log-in.svg" alt=""></a>
+        <a id='burger-close' href="#"><img src="img/close.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="base">
+      <input type="text" class='search-input' placeholder="Поиск...">
+      <ul>
+        <li><a href="#">О проекте</a></li>
+        <li><a href="#">Фонд "Новый дом"</a></li>
+        <li><a href="#">Поступающим</a></li>
+        <li><a href="#">Буклаб "Гагарин"</a></li>
+        <li><a href="#">Служба СПС</a></li>
+        <li><a href="#">Сведения об образовательной организации</a></li>
+      </ul>
+    </div>
+
+    <hr class="line">
+
+    <div class="bottom">
+      <ul>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Вакансии для сотрудников</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="links d-flex justify-content-between align-items-center">
+      <a href="#"><img src="img/insta.svg" alt=""></a>
+      <a href="#"><img src="img/twitter.svg" alt=""></a>
+      <a href="#"><img src="img/facebook.svg" alt=""></a>
+      <a href="#"><img src="img/youtube.svg" alt=""></a>
+      <a href="#"><img src="img/logo_vk_24.svg" alt=""></a>
+    </div>
+
+    <p class="copyrights">Copyright © ТОЧКА БУДУЩЕГО</p>
+  </div>
+
+  <div class="widget-search-wrapper widget-search-wrapper-off">
+    <div class="widget_search widget_search_off">
+      <img id='search-widget-close' src="img/widget-close.svg" alt="">
+      <input type="text" class='search-input' placeholder="Поиск...">
+    </div>
+  </div>
+
+  <div class="widget-off widget-form-wrapper d-flex justify-content-center">
+    <form action="">
+      <img id='widget-form-close' src="img/form-widget-close.svg" alt="">
+      <h2>Анкета заинтересованности</h2>
+      <div class="steps row justify-content-between align-items-center">
+        <div class='green'>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+      <h3>Представьтесь, пожалуйста</h3>
+      <input type="text" placeholder='Например: Иванов Иван Иванович'>
+      <div class="row">
+        <div class="col-6">
+          <h3>Дата рождения</h3>
+          <input type="text" placeholder="01.01.2020"> 
+        </div>
+        <div class="col-6 p-0">
+          <h3>Ваш пол</h3>
+          <div class="row w-100 m-0">
+            <button class="btn-sex btn-sex-active">Женский</button>
+            <button class="btn-sex">Мужской</button>
+          </div>
+        </div>
+      </div>
+      <h3>Укажите Ваши контактные данные: </h3>
+      <input type="text" placeholder="8 (000) 0000 000">
+      <h3>Электронная почта</h3>
+      <input type="text" placeholder="example@mail.ru">
+      <span>На указанную почту будут отправлены данные о регистрации</span>
+      <h3>Фактический адрес проживания: </h3>
+      <input type="text" placeholder="Укажите город, улицу/микрорайон, дом, квартиру">
+      <!-- <div class="button-wrapper d-flex justify-content-end">    -->
+        <button class="btn-next">Далее &rarr;</button>
+      <!-- </div> -->
+      <p>
+        Возникли проблемы с заполнением анкеты? Пожалуйста, сообщите нам <a href="#">help@tbedu.ru</a> | Политика обработки персональных данных
+      </p>
+    </form>
+  </div>
+
+  <div class="jaw">
+    <div class="eye" id=eye>
+      <img src="img/view_outline_24.svg" alt="">
+    </div>
+    <div class="base">
+      <span>Цвет</span>
+      <div class="colors">
+        <div class="icon grey" id='grey'></div>
+        <div class="icon black" id='black'></div>
+        <div class="icon green" id='green'></div>
+        <div class="icon blue" id='blue'></div>
+      </div>
+      <span>Размер</span>
+      <div class="size">
+        <img id=smallest src="img/smallest.svg" alt="">
+        <img id=small src="img/small.svg" alt="">
+        <img id=medium src="img/medium.svg" alt="">
+        <img id=big src="img/big.svg" alt="">
+      </div>
+      <button id='come-back' class='btn-version'>Обычная версия сайта</button>
+    </div>
+  </div>
+
+  <section class="information">
+    <div class="container">
+      <div class="way">
+        <a href="#">О проекте</a> &rarr;
+        <a href="#">Об образовательном комплексе</a>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <img class='subwrite' src="img/aboutComplex.svg" alt="">
+          <h2>Об образовательном <br> комплексе</h2>
+          <img class='lines' src="img/lines.svg" alt="">
+          <p>
+            Большая часть текста сделана из разделов 1.10.32–3 книги Цицерона «На грани Добра и Зла» («De finibus bonorum et malorum»). Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit является первой известной человечеству версией («Больше нет никого из тех, кто любит скорбь, поскольку это горе и поэтому хочет заполучить это»). Находка присваивается Ричарду МакКлинтоку (Richard McClintock), филологу, руководителю публикаций в колледже Хампден-Сидней, что в Вирджинии; он искал «citings consectetur» в классической латинской литературе, термин, который встречается удивительно редко в том литературном тексте.
+            Большая часть текста сделана из разделов 1.10.32–3 книги Цицерона «На грани Добра и Зла» («De finibus bonorum et malorum»). Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit является первой 
+          </p>
+        </div>
+        <div class="col-lg-6 col-12">
+          <img  src="img/aboutComplex1.png" alt="">
+        </div>
+      </div>
+
+      <div class="row mt">
+        <div class="col-lg-6 col-12 order-lg-1">
+          <img class='subwrite' src="img/infroStructure.svg" alt="">
+          <h2 class='mt-title'>В инфраструктуру <br> Образовательного комплекса <br> «Точка будущего» входят</h2>
+          <img class='lines' src="img/lines.svg" alt="">
+          <p>
+            Большая часть текста сделана из разделов 1.10.32–3 книги Цицерона «На грани Добра и Зла» («De finibus bonorum et malorum»). Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit является первой известной человечеству версией («Больше нет никого из тех, кто любит скорбь, поскольку это горе и поэтому хочет заполучить это»). Находка присваивается Ричарду МакКлинтоку (Richard McClintock), филологу, руководителю публикаций в колледже Хампден-Сидней, что в Вирджинии; он искал «citings consectetur» в классической латинской литературе, термин, который встречается удивительно редко в том литературном тексте.
+            Большая часть текста сделана из разделов 1.10.32–3 книги Цицерона «На грани Добра и Зла» («De finibus bonorum et malorum»). Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit является первой 
+          </p>
+        </div>
+        <div class="col-lg-6 col-12">
+          <img  src="img/aboutComplex2.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="top d-flex flex-column align-items-center w-100">
+          <img src="img/footer-logo.png" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut pellentesque tellus accumsan.</p>
+          <div class="social">
+            <a href="#" class="social-link social-link_inst">
+              <div class="insta icon"></div>
+            </a>
+
+            <a href="#" class="social-link social-link_twitter">
+              <div class="twitter icon"></div>
+            </a>
+
+            <a href="#" class="social-link social-link_facebook">
+              <div class="facebook icon"></div>
+            </a>
+
+            <a href="#" class="social-link social-link_youtube">
+              <div class="youtube icon"></div>
+            </a>
+
+            <a href="#" class="social-link social-link_vk">
+              <div class="vk icon"></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <p>Copyright © ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС “ТОЧКА БУДУЩЕГО”</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</div>
+  
+</body>
+</html>

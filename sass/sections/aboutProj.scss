@@ -1,0 +1,38 @@
+.information{
+  h2{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #272B2D;
+    margin-top: -100px;
+  }
+
+  p{
+    margin-top: 16px;
+  }
+
+  .mt{
+    margin-top: 96px;
+  }
+
+  .mt-title{
+    margin-top: -200px;
+  }
+
+}
+
+@media (max-width: 992px){
+  .information{
+    p{
+      margin-bottom: 45px;
+    }
+
+    .col-12{
+      img:last-child{
+        width: 100%;
+      }
+    }
+  }
+}

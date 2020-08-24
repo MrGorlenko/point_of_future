@@ -2280,6 +2280,37 @@ footer .vk {
   }
 }
 
+.information h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: #272B2D;
+  margin-top: -100px;
+}
+
+.information p {
+  margin-top: 16px;
+}
+
+.information .mt {
+  margin-top: 96px;
+}
+
+.information .mt-title {
+  margin-top: -200px;
+}
+
+@media (max-width: 992px) {
+  .information p {
+    margin-bottom: 45px;
+  }
+  .information .col-12 img:last-child {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1450px) {
   .container-fluid {
     max-width: 1440px !important;
@@ -2312,7 +2343,7 @@ body {
   overflow-x: hidden;
 }
 
-#add {
-  overflow: hidden;
+#app {
+  overflow: hidden !important;
 }
 /*# sourceMappingURL=index.css.map */
