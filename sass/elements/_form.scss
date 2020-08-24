@@ -29,7 +29,7 @@ $input-height: 48px;
       height: $input-height;
       padding-left: 8px;
       padding-right: 16px;
-      color: #3d4b53bf;
+      color: #3d4b53bf !important;
     }
 
     .short{
@@ -45,7 +45,7 @@ $input-height: 48px;
       margin-top: 26px;
       padding-left: 16px;
       width: $input-width;
-      color: #3D4B53;
+      color: #3D4B53 !important;
     }
 
     button{

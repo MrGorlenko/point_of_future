@@ -40,11 +40,12 @@ $(document).ready(function(){
     $('h2, h1, h3').css('color', '#ffffff')
     // $('.founder').css('background-color', '#000000');
     $('.founder p').css('color', '#3D4B53')
+    $('.FAQ .question').css('color', '#fff')
   })
 
   $('#green').click(function(){
     $('body').css('background-color', '#9cfda7');
-    $('.founder p').css('color', '#3D4B53')
+    $('.founder p').css('color', '#000')
   })
 
   $('#blue').click(function(){
@@ -62,5 +63,8 @@ $(document).ready(function(){
     $('a, button').css('font-size', '14px')
     $('.founder .info .role').css('font-size', '12px')
     $('.founder .info .role').css('line-height', '16px')
+    $('h2, h3, h4').css('color', '#272B2D')
+    $('.FAQ h3').css('color', '#3D4B53')
+    $('.FAQ .question').css('color', '#3D4B53')
   })
 })
