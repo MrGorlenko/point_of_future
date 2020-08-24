@@ -462,8 +462,9 @@ button {
 .jaw {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 120px;
+  position: fixed;
+  top: 265px;
+  z-index: 3;
   right: -288px;
   transition: right .3s ease;
 }
@@ -1900,6 +1901,7 @@ footer .vk {
   background-color: rgba(255, 255, 255, 0.9);
   justify-content: center;
   align-items: center;
+  z-index: 4;
 }
 
 .gallery-modal-off {
@@ -2194,5 +2196,9 @@ footer .vk {
 
 body {
   overflow-x: hidden;
+}
+
+#add {
+  overflow: hidden;
 }
 /*# sourceMappingURL=index.css.map */

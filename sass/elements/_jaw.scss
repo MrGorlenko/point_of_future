@@ -12,8 +12,10 @@ $base-width: 288px;
   display: flex;
   align-items: center;
 
-  position: absolute;
-  top: 120px;
+  // position: absolute;
+  position: fixed;
+  top: 265px;
+  z-index: 3;
   right: -$base-width;
 
   transition: right .3s ease;

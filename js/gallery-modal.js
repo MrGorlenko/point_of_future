@@ -22,6 +22,7 @@ $(document).ready(function(){
       var galleryTop = new Swiper('.gallery-top', {
         spaceBetween: 10,
         initialSlide: numKey,
+        loop: true,
           navigation: {
             nextEl: '.swiper-button-next-gallery',
             prevEl: '.swiper-button-prev-gallery',
