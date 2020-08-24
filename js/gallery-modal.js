@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('.gallery-wrapper').each(function(index){
     $(this).on('click', function(){
       let numKey = $(this).attr('id')
-      numKey = parseInt(numKey, 10)
+      numKey = parseInt(numKey, 10) 
 
       $('.gallery-modal').addClass('gallery-modal-on')
       $('.gallery-modal').removeClass('gallery-modal-off')

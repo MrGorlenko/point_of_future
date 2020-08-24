@@ -2174,6 +2174,86 @@ footer .vk {
   }
 }
 
+.FAQ .questions {
+  background: #F9F9F9;
+}
+
+.FAQ .questions .question {
+  border-bottom: 1px solid #fff;
+  padding: 24px;
+  color: #3D4B53;
+  display: block;
+}
+
+.FAQ .questions .active {
+  background: #E7ECF0;
+}
+
+.FAQ h2 {
+  font-size: 32px;
+}
+
+.FAQ .mb {
+  margin-bottom: 56px;
+}
+
+.FAQ h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: #3D4B53;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.FAQ hr {
+  width: 100%;
+  height: 1px;
+  background-color: #DFE5F2;
+  margin-bottom: 26px;
+}
+
+.FAQ .cell {
+  cursor: pointer;
+}
+
+.FAQ .cell h4 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3D4B53;
+  width: 90%;
+  margin-bottom: 0;
+}
+
+.FAQ .cell img {
+  width: 28px;
+  height: 28px;
+}
+
+.FAQ .cell .content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.FAQ .cell p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3D4B53;
+}
+
+.FAQ .cell .wrapper {
+  margin-bottom: 30px;
+}
+
 @media (min-width: 1450px) {
   .container-fluid {
     max-width: 1440px !important;
