@@ -66,5 +66,11 @@ $(document).ready(function(){
     $('h2, h3, h4').css('color', '#272B2D')
     $('.FAQ h3').css('color', '#3D4B53')
     $('.FAQ .question').css('color', '#3D4B53')
+    $('.subwrite, .title-pic').css('opacity', '1')
   })
+
+  $('#grey, #black, #green, #blue').click(function(){
+    $('.subwrite, .title-pic').css('opacity', '0')
+  })
+
 })
