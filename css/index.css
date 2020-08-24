@@ -1384,6 +1384,77 @@ button {
   }
 }
 
+.map {
+  margin-top: 40px;
+  background-image: url("../img/map.png");
+  border-radius: 20px;
+  padding: 56px;
+}
+
+.map form {
+  width: 357px;
+  height: 450px;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.map form h2 {
+  margin-top: auto;
+}
+
+.map form select, .map form input, .map form .long {
+  border: 1px solid #C7C7C7;
+  background: #F1F1F1;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+
+.map form select, .map form .long {
+  width: 100%;
+}
+
+.map form select {
+  margin-top: 26px;
+  height: 48px;
+  padding-left: 8px;
+  padding-right: 16px;
+  color: #3d4b53bf;
+}
+
+.map form .short {
+  height: 48px;
+}
+
+.map form .long {
+  height: 120px;
+  margin-top: 26px;
+}
+
+.map form input {
+  margin-top: 26px;
+  padding-left: 16px;
+  width: 100%;
+  color: #3D4B53;
+}
+
+.map form button {
+  float: right;
+  margin-top: 16px;
+}
+
+@media (max-width: 992px) {
+  .map {
+    padding: 0;
+    background: none;
+  }
+  .map form {
+    width: 100%;
+  }
+}
+
 .hero {
   position: relative;
   width: 100%;
@@ -2025,6 +2096,75 @@ footer .vk {
 @media screen and (max-width: 992px) {
   .documents .col-12:last-child .height {
     height: 164px;
+  }
+}
+
+.contacts h2 {
+  margin-top: -30px;
+}
+
+.contacts .contact-cell {
+  border-bottom: 1px solid #DFE5F2;
+  padding-top: 40px;
+}
+
+.contacts .contact-cell:nth-child(4) {
+  border-bottom: none;
+}
+
+.contacts .contact-cell:last-child {
+  border-bottom: none;
+}
+
+.contacts .info {
+  width: 100%;
+  position: relative;
+  margin-bottom: 34px;
+}
+
+.contacts .info p, .contacts .info span {
+  position: absolute;
+  left: 62px;
+}
+
+.contacts .info p {
+  top: 0;
+}
+
+.contacts .info span {
+  top: 24px;
+}
+
+.contacts p, .contacts a {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3D4B53;
+}
+
+.contacts .cell {
+  margin-bottom: 24px;
+  padding-left: 62px;
+}
+
+.contacts .cell a, .contacts .cell span {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .contacts .cell {
+    padding-left: 20px;
+  }
+  .contacts .info {
+    height: 54px;
+  }
+  .contacts .info p, .contacts .info span {
+    left: 20px;
+  }
+  .contacts .info img {
+    display: none;
   }
 }
 
