@@ -2190,6 +2190,10 @@ footer .vk {
   background: #E7ECF0;
 }
 
+.FAQ select {
+  display: none;
+}
+
 .FAQ h2 {
   font-size: 32px;
 }
@@ -2253,6 +2257,27 @@ footer .vk {
 
 .FAQ .cell .wrapper {
   margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .FAQ {
+    overflow: hidden;
+  }
+  .FAQ .questions {
+    display: none;
+  }
+  .FAQ h2 {
+    text-align: center;
+  }
+  .FAQ select {
+    display: block;
+    background: #F9F9F9;
+    border: 1px solid #fff;
+    padding: 24px;
+    color: #3D4B53 !important;
+    display: block;
+    margin-bottom: 25px;
+  }
 }
 
 @media (min-width: 1450px) {

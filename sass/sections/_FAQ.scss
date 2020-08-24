@@ -13,6 +13,10 @@
     }
   }
 
+  select{
+    display: none;
+  }
+
   h2{
     font-size: 32px;
   }
@@ -76,6 +80,27 @@
 
     .wrapper{
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 992px){
+  .FAQ{
+    overflow: hidden;
+    .questions{
+      display: none;
+    }
+    h2{
+      text-align: center;
+    }
+    select{
+      display: block;
+      background: #F9F9F9;
+      border: 1px solid #fff;
+      padding: 24px;
+      color: #3D4B53 !important;
+      display: block;
+      margin-bottom: 25px;
     }
   }
 }
