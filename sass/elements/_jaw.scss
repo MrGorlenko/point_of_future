@@ -38,6 +38,7 @@ $base-width: 288px;
 
     padding: 0 22px;
 
+
     span{
       margin-top: 24px;
       margin-bottom: 14px;
@@ -75,6 +76,9 @@ $base-width: 288px;
 
     .size{
       margin-bottom: 32px;
+      img{
+        cursor: pointer;
+      }
     }
   }
 }

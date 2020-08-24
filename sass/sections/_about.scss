@@ -47,7 +47,7 @@
 
   .content{
     width: 342px;
-    height: 244px;
+    min-height: 244px;
     background: linear-gradient(90deg, rgba(185, 212, 228, 0.2) -3.57%, rgba(185, 212, 228, 0.2) 103.93%);
     opacity: 0.8;
     border-radius: 8px;
