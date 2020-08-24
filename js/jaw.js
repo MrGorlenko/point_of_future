@@ -26,4 +26,41 @@ $(document).ready(function(){
     $(deformELements).css('line-height', '25px')
 
   })
+
+  $('#grey').click(function(){
+    $('body').css('background-color', 'rgb(106 126 138)');
+    $(deformELements).css('color', '#ffffff')
+    $('h2, h1, h3').css('color', '#ffffff')
+    $('.founder p').css('color', '#3D4B53')
+  })
+
+  $('#black').click(function(){
+    $('body').css('background-color', '#000000');
+    $(deformELements).css('color', '#ffffff')
+    $('h2, h1, h3').css('color', '#ffffff')
+    // $('.founder').css('background-color', '#000000');
+    $('.founder p').css('color', '#3D4B53')
+  })
+
+  $('#green').click(function(){
+    $('body').css('background-color', '#9cfda7');
+    $('.founder p').css('color', '#3D4B53')
+  })
+
+  $('#blue').click(function(){
+    $('body').css('background-color', '#2C5DE5');
+    $(deformELements).css('color', '#fff')
+    $('h2, h1, h3').css('color', '#fff')
+    $('.founder p').css('color', '#3D4B53')
+  })
+
+  $('#come-back').click(function(){
+    $('body').css('background-color', '#fff');
+    $('p, span, a').css('color', '#3D4B53');
+    $('button').css('color', '#3D4B53');
+    $('p, span, input, select').css('font-size', '16px')
+    $('a, button').css('font-size', '14px')
+    $('.founder .info .role').css('font-size', '12px')
+    $('.founder .info .role').css('line-height', '16px')
+  })
 })
