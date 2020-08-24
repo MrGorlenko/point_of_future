@@ -4,7 +4,6 @@ $(document).ready(function(){
 
   $('.cell').each(function(index){
     $(this).click(function(){
-      // $(this).children('img').attr('src', 'img/faq-minus.svg')
       counter++;
       switch (counter%2){
         case 0:
@@ -16,7 +15,14 @@ $(document).ready(function(){
           $(this).children('.content').addClass('d-none')
           break;
       }
-      // console.log($(this).children('.wrapper').children('img'))
+    })
+  })
+
+  $('.questions .question').each(function(index){
+    $(this).click(function(e){
+      e.preventDefault()
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
     })
   })
 })
