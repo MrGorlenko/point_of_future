@@ -1,0 +1,56 @@
+.our-team{
+  padding-top: 55px;
+  margin-bottom: 42px;
+  .team-member{
+    background: #F9F9F9;
+    border-radius: 4px;
+    height: 84px;
+    position: relative;
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    span, p{
+      display: block;
+    }
+    p{
+      margin-bottom: 0;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 32px;
+      color: #272B2D;
+    }
+    span{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: #656565;
+    }
+    img{
+      float: right;
+      position: absolute;
+      top: 18px;
+      right: 24px;
+    }
+  }
+
+}
+
+.partner{
+  height: 144px;
+  background-color: #F9F9F9;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 992px){
+  .partner{
+    padding: 16px 0;
+    p{
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
