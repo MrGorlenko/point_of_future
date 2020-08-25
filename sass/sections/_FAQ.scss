@@ -1,17 +1,4 @@
 .FAQ{
-  .questions{
-    background: #F9F9F9;
-    .question{
-      border-bottom: 1px solid #fff;
-      padding: 24px;
-      color: #3D4B53 !important;
-      display: block;
-    }
-
-    .active{
-      background: #E7ECF0;
-    }
-  }
 
   select{
     display: none;
@@ -84,12 +71,23 @@
   }
 }
 
+.questions{
+  background: #F9F9F9;
+  .question{
+    border-bottom: 1px solid #fff;
+    padding: 24px;
+    color: #3D4B53 !important;
+    display: block;
+  }
+
+  .active{
+    background: #E7ECF0;
+  }
+}
+
 @media (max-width: 992px){
   .FAQ{
     overflow: hidden;
-    .questions{
-      display: none;
-    }
     h2{
       text-align: center;
     }
@@ -102,5 +100,8 @@
       display: block;
       margin-bottom: 25px;
     }
+  }
+  .questions{
+    display: none;
   }
 }

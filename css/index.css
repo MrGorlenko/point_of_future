@@ -639,10 +639,6 @@ button {
   margin-top: -45px;
 }
 
-.section-title img {
-  margin-top: 30px;
-}
-
 .gallery-content .buttons {
   display: flex;
   justify-content: space-between;
@@ -2175,21 +2171,6 @@ footer .vk {
   }
 }
 
-.FAQ .questions {
-  background: #F9F9F9;
-}
-
-.FAQ .questions .question {
-  border-bottom: 1px solid #fff;
-  padding: 24px;
-  color: #3D4B53 !important;
-  display: block;
-}
-
-.FAQ .questions .active {
-  background: #E7ECF0;
-}
-
 .FAQ select {
   display: none;
 }
@@ -2259,12 +2240,24 @@ footer .vk {
   margin-bottom: 30px;
 }
 
+.questions {
+  background: #F9F9F9;
+}
+
+.questions .question {
+  border-bottom: 1px solid #fff;
+  padding: 24px;
+  color: #3D4B53 !important;
+  display: block;
+}
+
+.questions .active {
+  background: #E7ECF0;
+}
+
 @media (max-width: 992px) {
   .FAQ {
     overflow: hidden;
-  }
-  .FAQ .questions {
-    display: none;
   }
   .FAQ h2 {
     text-align: center;
@@ -2277,6 +2270,9 @@ footer .vk {
     color: #3D4B53 !important;
     display: block;
     margin-bottom: 25px;
+  }
+  .questions {
+    display: none;
   }
 }
 
@@ -2311,6 +2307,79 @@ footer .vk {
   }
 }
 
+.information-about {
+  padding-top: 72px;
+}
+
+.information-about select {
+  display: none;
+}
+
+.information-about .col-12:last-child {
+  border-radius: 4px;
+  padding: 32px;
+}
+
+.information-about .col-12:last-child .document {
+  border-bottom: 1px solid #D1DADB;
+}
+
+.information-about .col-12:last-child p {
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .information-about .col-12:last-child p {
+    margin-right: 32px;
+  }
+}
+
+.information-about .col-12:last-child a {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #55BA60;
+}
+
+.information-about .col-12:last-child a span {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 992px) {
+  .information-about .col-12:last-child a span {
+    display: none;
+  }
+}
+
+.information-about .col-12:last-child .height {
+  height: 74px;
+}
+
+@media screen and (max-width: 992px) {
+  .information-about .col-12:last-child .height {
+    height: 164px;
+  }
+}
+
+@media (max-width: 992px) {
+  .information-about select {
+    display: block;
+    background: #F9F9F9;
+    border: 1px solid #fff;
+    padding: 24px;
+    color: #3D4B53 !important;
+    display: block;
+    margin-bottom: 25px;
+  }
+  .information-about .col-12:last-child .document {
+    height: 74px;
+  }
+}
+
 @media (min-width: 1450px) {
   .container-fluid {
     max-width: 1440px !important;
@@ -2341,6 +2410,59 @@ p {
 
 body {
   overflow-x: hidden;
+}
+
+.section-title {
+  position: relative;
+}
+
+.section-title h2 {
+  position: absolute;
+  top: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54.6923px;
+  line-height: 82px;
+  opacity: 0.2;
+  color: #B9D4E4;
+}
+
+@media screen and (max-width: 992px) {
+  .section-title h2 {
+    font-size: 33px;
+    line-height: 36px;
+  }
+}
+
+.section-title h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: #272B2D;
+}
+
+@media screen and (max-width: 992px) {
+  .section-title h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
+}
+
+.section-title-center h2 {
+  text-align: center;
+}
+
+.section-title-center h3 {
+  text-align: center;
 }
 
 #app {
