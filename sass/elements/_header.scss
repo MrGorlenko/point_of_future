@@ -61,6 +61,24 @@ header{
       li{
         list-style-type: none;
         margin-left: 40px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: color .2s ease;
+        font-size: 14px;
+        color: $link-color;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover{
+          color: #55BA60;
+          transition: color .2s ease;
+          text-decoration: none;
+          a{
+            color: #55BA60;
+            transition: color .2s ease;
+            text-decoration: none;
+          }
+        }
       }
     }
 

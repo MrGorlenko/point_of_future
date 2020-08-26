@@ -50,14 +50,14 @@
       <div class="container-fluid">
         <div class="row d-flex bottom align-items-center">
           <div class="col-6 col-lg-2"><img src="img/logo.svg" alt=""></div>
-          <div class="col-lg-10 d-none d-lg-flex justify-content-end">
+          <div class="col-lg-10 d-none d-lg-flex justify-content-end h-100">
             <ul>
-              <li><a id='about-widget-call' href="#">О проекте</a></li>
-              <li><a href="#">Фонд "Новый дом"</a></li>
-              <li><a id='news-widget-call' href="#">Новости</a></li>
-              <li><a id='students-widget-call' href="#">Обучающимся</a></li>
-              <li><a href="#">Поступающим</a></li>
-              <li><a id='information-widget-call' href="#">Сведения об образовательной организации</a></li>
+              <li id='about-widget-call'>О проекте</li>
+              <li id='fund-widget-call'>Фонд "Новый дом"</li>
+              <li id='news-widget-call'>Новости</li>
+              <li id='students-widget-call'>Обучающимся</li>
+              <li id='incoming-widget-call'>Поступающим</li>
+              <li id='information-widget-call'>Сведения об образовательной организации</li>
             </ul>
           </div>
           <div class="col-6 d-lg-none d-flex justify-content-end">
@@ -69,7 +69,7 @@
   </header>
 
   
-  <div id='widget_about_project' class="widget_about widget_header_off">
+  <div id='widget_about_project' class="widget widget_about widget_header_off">
     <div class="container">
       <div class="row">
         <div class="col-6"><img src="img/widget-about.png" alt=""></div>
@@ -84,10 +84,28 @@
         </div>
       </div>
     </div>
+    <div class="widget_about_bg widget_about_bg_off"></div>
   </div>
-  <div class="widget_about_bg widget_about_bg_off"></div>
 
-  <div id='widget_news' class="widget_about widget_header_off">
+
+
+  <div id='widget_about-fund_project' class="widget widget_about widget_header_off">
+    <div class="container">
+      <div class="row">
+        <div class="col-6"><img src="img/widget-about.png" alt=""></div>
+        <div class="col-6">
+          <h2>Фонд "Новый дом"</h2>
+          <ul id='widget-list'>
+            <li> <img src="img/arrow-right-green.svg" alt=""> <a href="#">О фонде</a></li>
+            <li> <img src="img/arrow-right-green.svg" alt=""> <a href="#">Документация фонда</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="widget_about_bg widget_about_bg_off"></div>
+  </div>
+
+  <div id='widget_news' class="widget widget_about widget_header_off">
     <div class="container">
       <div class="row">
         <div class="col-6"><img src="img/widget-about.png" alt=""></div>
@@ -101,9 +119,10 @@
         </div>
       </div>
     </div>
+    <div class="widget_about_bg widget_about_bg_off"></div>
   </div>
 
-  <div id='widget_students' class="widget_about widget_header_off">
+  <div id='widget_students' class="widget widget_about widget_header_off">
     <div class="container">
       <div class="row">
         <div class="col-6"><img src="img/students-widget.png" alt=""></div>
@@ -128,9 +147,25 @@
         </div>
       </div>
     </div>
+    <div class="widget_about_bg widget_about_bg_off"></div>
   </div>
 
-  <div id='widget_info' class="widget_about widget_header_off">
+  <div id='widget_incoming' class="widget widget_about widget_header_off">
+    <div class="container">
+      <div class="row">
+        <div class="col-6"><img src="img/students-widget.png" alt=""></div>
+        <div class="col-6">
+          <h2> Поступающим</h2>
+          <ul id='widget-list'>
+            <li> <img src="img/arrow-right-green.svg" alt=""> <a href="#">Перечень документов для поступления</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="widget_about_bg widget_about_bg_off"></div>
+  </div>
+
+  <div id='widget_info' class="widget widget_about widget_header_off">
     <div class="container">
       <div class="row">
         <div class="col-6"><img src="img/info-widget.png" alt=""></div>
