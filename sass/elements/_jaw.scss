@@ -9,19 +9,25 @@ $base-width: 288px;
 }
 
 .jaw{
+
+  background: none !important;
+
   display: flex;
   align-items: center;
 
   // position: absolute;
   position: fixed;
   top: 265px;
-  z-index: 3;
+  z-index: 5;
   right: -$base-width;
-
   transition: right .3s ease;
 
+  img{
+    background: #FFFFFF !important;
+  }
+
   .eye, .base{
-    background: #FFFFFF;
+    background: #FFFFFF !important;
     box-shadow: 2px 0px 20px rgba(125, 125, 125, 0.2);
     border-radius: 16px 0px 0px 16px;
   }
@@ -38,6 +44,10 @@ $base-width: 288px;
 
     padding: 0 22px;
 
+    img{
+      background: #FFFFFF !important;
+    }
+
 
     span{
       margin-top: 24px;
@@ -46,12 +56,14 @@ $base-width: 288px;
       font-family: $basic-font;
       font-weight: 600;
       font-size: 16px;
-      color: #000000;
+      color: #000000 !important;
+      background: #FFFFFF !important;
     }
 
     .colors, .size{
       width: 100%;
-      @include justify-between
+      @include justify-between;
+      background: #FFFFFF !important;
     }
 
     .colors{
@@ -59,23 +71,25 @@ $base-width: 288px;
         width: 48px;
         height: 48px;
         border-radius: 50%;
+        background: #FFFFFF !important;
       }
       .grey{
-        background: #3D4B53;
+        background: #3D4B53 !important;
       }
       .black{
-        background: #1A1A1A;
+        background: #1A1A1A !important;
       }
       .green{
-        background: #55BA60;
+        background: #55BA60 !important;
       }
       .blue{
-        background: #2C5DE5;
+        background: #2C5DE5 !important;
       }
     }
 
     .size{
       margin-bottom: 32px;
+      background: #FFFFFF !important;
       img{
         cursor: pointer;
       }

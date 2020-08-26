@@ -461,17 +461,22 @@ button {
 }
 
 .jaw {
+  background: none !important;
   display: flex;
   align-items: center;
   position: fixed;
   top: 265px;
-  z-index: 3;
+  z-index: 5;
   right: -288px;
   transition: right .3s ease;
 }
 
+.jaw img {
+  background: #FFFFFF !important;
+}
+
 .jaw .eye, .jaw .base {
-  background: #FFFFFF;
+  background: #FFFFFF !important;
   box-shadow: 2px 0px 20px rgba(125, 125, 125, 0.2);
   border-radius: 16px 0px 0px 16px;
 }
@@ -491,6 +496,10 @@ button {
   padding: 0 22px;
 }
 
+.jaw .base img {
+  background: #FFFFFF !important;
+}
+
 .jaw .base span {
   margin-top: 24px;
   margin-bottom: 14px;
@@ -498,39 +507,43 @@ button {
   font-family: "Inter";
   font-weight: 600;
   font-size: 16px;
-  color: #000000;
+  color: #000000 !important;
+  background: #FFFFFF !important;
 }
 
 .jaw .base .colors, .jaw .base .size {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background: #FFFFFF !important;
 }
 
 .jaw .base .colors .icon {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+  background: #FFFFFF !important;
 }
 
 .jaw .base .colors .grey {
-  background: #3D4B53;
+  background: #3D4B53 !important;
 }
 
 .jaw .base .colors .black {
-  background: #1A1A1A;
+  background: #1A1A1A !important;
 }
 
 .jaw .base .colors .green {
-  background: #55BA60;
+  background: #55BA60 !important;
 }
 
 .jaw .base .colors .blue {
-  background: #2C5DE5;
+  background: #2C5DE5 !important;
 }
 
 .jaw .base .size {
   margin-bottom: 32px;
+  background: #FFFFFF !important;
 }
 
 .jaw .base .size img {
@@ -864,7 +877,7 @@ button {
 .form form {
   width: 471px;
   height: 559px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.35);
   border-radius: 16px;
   padding: 30px;
@@ -1634,6 +1647,7 @@ button {
 .founders .decor1, .founders .decor2 {
   position: absolute;
   z-index: 3;
+  background: none !important;
 }
 
 .founders .decor1 {
