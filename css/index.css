@@ -621,13 +621,6 @@ button {
   }
 }
 
-.section-title {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .section-title_news {
   margin-top: -30px !important;
 }
@@ -2441,6 +2434,56 @@ footer .vk {
   }
 }
 
+.about-fund {
+  padding-top: 100px;
+}
+
+.about-fund p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3D4B53;
+}
+
+@media screen and (min-width: 993px) {
+  .about-fund .img-float-right {
+    float: right;
+  }
+}
+
+.about-fund .mt {
+  margin-top: 105px;
+}
+
+.about-fund ul {
+  padding-left: 40px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3D4B53;
+}
+
+.about-fund ul li {
+  list-style-type: none;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.about-fund ul li:before {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -40px;
+  top: 0;
+  background-image: url("../img/check-circle.svg");
+}
+
 @media (min-width: 1450px) {
   .container-fluid {
     max-width: 1440px !important;
@@ -2517,6 +2560,13 @@ body {
   .section-title {
     margin-bottom: 30px;
   }
+}
+
+.section-title-center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-title-center h2 {

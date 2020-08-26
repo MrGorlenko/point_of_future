@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>История</title>
+  <title>Главная страница</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -14,6 +14,9 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+
   <script src='js-lib/jquery.js'></script>
   <script src='js/version.js'></script>
   <script src='js/news.js'></script>
@@ -23,9 +26,13 @@
   <script src='js/gallery-modal.js'></script>
 
   <script src='js/widget-menu.js'></script>
+  <script src='js/jaw.js'></script>
 
 </head>
 <body>
+
+<div id="app">
+
   <header>
     <div class="top">
       <div class="container-fluid">
@@ -101,13 +108,6 @@
     </div>
   </div>
 
-  <div class="widget-search-wrapper widget-search-wrapper-off">
-    <div class="widget_search widget_search_off">
-      <img id='search-widget-close' src="img/widget-close.svg" alt="">
-      <input type="text" class='search-input' placeholder="Поиск...">
-    </div>
-  </div>
-
   <div id='burger-menu' class="d-lg-none burger burger-passive burger-z-none">
     <div class="top d-flex justify-content-between align-items-center">
       <img src="img/logo.svg" alt="logo">
@@ -149,150 +149,121 @@
     <p class="copyrights">Copyright © ТОЧКА БУДУЩЕГО</p>
   </div>
 
-
-  <section class="our-team">
-    <div class="section-title section-title-center">
-      <h2>Команда</h2>
-      <h3>Команда</h3>
-      <img src="img/title-line.svg" alt="">
+  <div class="widget-search-wrapper widget-search-wrapper-off">
+    <div class="widget_search widget_search_off">
+      <img id='search-widget-close' src="img/widget-close.svg" alt="">
+      <input type="text" class='search-input' placeholder="Поиск...">
     </div>
+  </div>
 
-    <div class="container">
+  <div class="widget-off widget-form-wrapper d-flex justify-content-center">
+    <form action="">
+      <img id='widget-form-close' src="img/form-widget-close.svg" alt="">
+      <h2>Анкета заинтересованности</h2>
+      <div class="steps row justify-content-between align-items-center">
+        <div class='green'>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+      <h3>Представьтесь, пожалуйста</h3>
+      <input type="text" placeholder='Например: Иванов Иван Иванович'>
       <div class="row">
-        <div class="col-lg-4 col-12">
-          <div class="team-member">
-            <p>Darlene Robertson</p>
-            <span>Design and Development</span>
-            <img src="img/team-member.png" alt="">
-          </div>
-
-          <div class="team-member">
-            <p>Darlene Robertson</p>
-            <span>Design and Development</span>
-            <img src="img/team-member.png" alt="">
-          </div>
-
-          <div class="team-member">
-            <p>Darlene Robertson</p>
-            <span>Design and Development</span>
-            <img src="img/team-member.png" alt="">
-          </div>
+        <div class="col-6">
+          <h3>Дата рождения</h3>
+          <input type="text" placeholder="01.01.2020"> 
         </div>
-        <div class="col-lg-4 col-12">
-          <div class="team-member">
-            <p>Darlene Robertson</p>
-            <span>Design and Development</span>
-            <img src="img/team-member.png" alt="">
-          </div>
-
-          <div class="team-member">
-            <p>Darlene Robertson</p>
-            <span>Design and Development</span>
-            <img src="img/team-member.png" alt="">
-          </div>
-
-          <div class="team-member">
-            <p>Darlene Robertson</p>
-            <span>Design and Development</span>
-            <img src="img/team-member.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-4 col-12">
-          <div class="team-member">
-            <p>Darlene Robertson</p>
-            <span>Design and Development</span>
-            <img src="img/team-member.png" alt="">
-          </div>
-
-          <div class="team-member">
-            <p>Darlene Robertson</p>
-            <span>Design and Development</span>
-            <img src="img/team-member.png" alt="">
-          </div>
-
-          <div class="team-member">
-            <p>Darlene Robertson</p>
-            <span>Design and Development</span>
-            <img src="img/team-member.png" alt="">
+        <div class="col-6 p-0">
+          <h3>Ваш пол</h3>
+          <div class="row w-100 m-0">
+            <button class="btn-sex btn-sex-active">Женский</button>
+            <button class="btn-sex">Мужской</button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <h3>Укажите Ваши контактные данные: </h3>
+      <input type="text" placeholder="8 (000) 0000 000">
+      <h3>Электронная почта</h3>
+      <input type="text" placeholder="example@mail.ru">
+      <span>На указанную почту будут отправлены данные о регистрации</span>
+      <h3>Фактический адрес проживания: </h3>
+      <input type="text" placeholder="Укажите город, улицу/микрорайон, дом, квартиру">
+      <!-- <div class="button-wrapper d-flex justify-content-end">    -->
+        <button class="btn-next">Далее &rarr;</button>
+      <!-- </div> -->
+      <p>
+        Возникли проблемы с заполнением анкеты? Пожалуйста, сообщите нам <a href="#">help@tbedu.ru</a> | Политика обработки персональных данных
+      </p>
+    </form>
+  </div>
 
-  <section class="our-partners">
-    <div class="section-title section-title-center">
-      <h2>Партнеры</h2>
-      <h3>Партнеры</h3>
-      <img src="img/title-line.svg" alt="">
+  <div class="jaw">
+    <div class="eye" id=eye>
+      <img src="img/view_outline_24.svg" alt="">
     </div>
+    <div class="base">
+      <span>Цвет</span>
+      <div class="colors">
+        <div class="icon grey" id='grey'></div>
+        <div class="icon black" id='black'></div>
+        <div class="icon green" id='green'></div>
+        <div class="icon blue" id='blue'></div>
+      </div>
+      <span>Размер</span>
+      <div class="size">
+        <img id=smallest src="img/smallest.svg" alt="">
+        <img id=small src="img/small.svg" alt="">
+        <img id=medium src="img/medium.svg" alt="">
+        <img id=big src="img/big.svg" alt="">
+      </div>
+      <button id='come-back' class='btn-version'>Обычная версия сайта</button>
+    </div>
+  </div>
+
+
+  <section class="about-fund">  
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-6">
-          <div class="partner d-flex flex-column align-items-center">
-            <img src="img/partner.svg" alt="">
-            <p>Название компании</p>
+        <div class="col-lg-6 col-12">
+          <div class="section-title">
+            <h2>О фонде</h2>
+            <h3>О фонде</h3>
+            <img src="img/lines.svg" alt="">
           </div>
-
-          <div class="partner d-flex flex-column align-items-center">
-            <img src="img/partner.svg" alt="">
-            <p>Название компании</p>
-          </div>
-
-          <div class="partner d-flex flex-column align-items-center">
-            <img src="img/partner.svg" alt="">
-            <p>Название компании</p>
-          </div>
+          <p> <b>ГЛАВНАЯ ЗАДАЧА ФОНДА</b> - всесторонняя поддержка и полноценная интеграция в современное общество детей-сирот и других детей группы риска.
+            У этих детей нет возможности получить качественное образование,интересную профессию и,главное,
+            любящую семью.</p>
+          <p>К сожалению,построить детский дом - не означает решить вопрос адаптации ребенка в обществе.</p>
+          <p>Несмотря на уход и заботу,они все равно живут в своем закрытом обособленном мире.</p>
+          <p>Важно было найти способ,где дети-сироты могли бы получить не только полноценную семью,но и равные
+            возможности с остальными детьми.
+            Учитывая остроту проблемы и сознавая собственную социальную ответственность,Благотворительный
+            фонд «НОВЫЙ ДОМ» принял решение о создании и финансировании Образовательного комплекса
+            «ТОЧИ БУДУЩЕГО».</p>
         </div>
-        <div class="col-lg-3 col-6">
-
-                    <div class="partner d-flex flex-column align-items-center">
-            <img src="img/partner.svg" alt="">
-            <p>Название компании</p>
-          </div>
-
-                    <div class="partner d-flex flex-column align-items-center">
-            <img src="img/partner.svg" alt="">
-            <p>Название компании</p>
-          </div>
-
-                    <div class="partner d-flex flex-column align-items-center">
-            <img src="img/partner.svg" alt="">
-            <p>Название компании</p>
-          </div>
+        <div class="col-lg-6 col-12 order-lg-1 order-0">
+          <img class='img-float-right' src="img/fund-1.png" alt="">
         </div>
-        <div class="col-lg-3 col-6">
-
-                    <div class="partner d-flex flex-column align-items-center">
-            <img src="img/partner.svg" alt="">
-            <p>Название компании</p>
-          </div>
-
-                    <div class="partner d-flex flex-column align-items-center">
-            <img src="img/partner.svg" alt="">
-            <p>Название компании</p>
-          </div>
-
-                    <div class="partner d-flex flex-column align-items-center">
-            <img src="img/partner.svg" alt="">
-            <p>Название компании</p>
-          </div>
+      </div>
+      <div class="row mt">
+        <div class="col-lg-6 col-12">
+          <img src="img/fund-2.png" alt="">
         </div>
-        <div class="col-lg-3 col-6">
-
-                    <div class="partner d-flex flex-column align-items-center">
-            <img src="img/partner.svg" alt="">
-            <p>Название компании</p>
-          </div>
-
-                    <div class="partner d-flex flex-column align-items-center">
-            <img src="img/partner.svg" alt="">
-            <p>Название компании</p>
-          </div>
-
-                    <div class="partner d-flex flex-column align-items-center">
-            <img src="img/partner.svg" alt="">
-            <p>Название компании</p>
+        <div class="col-lg-6 col-12">
+          <div class="section-title">
+            <h3>В ЭТОМ КОМПЛЕКСЕ ДЕТИ-СИРОТЫ СМОГУТ</h3>
+            <ul>
+              <li>Обучаться наравне с обычными детьми</li>
+              <li>Получать возможность жить в приемной семье</li>
+              <li>Смогут определиться со своей будущей профессией</li>
+            </ul>
+            <p>Станут полноценными членами общества Образовательный проект «ТОЧКА БУДУЩЕГО» - это полностью благотворительный проект,который стал личной инициативой основателя фонда «НОВЫЙ ДОМ» Альберта Авдоляна и который был полностью поддержан главой попечительского совета фонда Сергеем Чемезовым.</p>
           </div>
         </div>
       </div>
@@ -335,4 +306,7 @@
     </div>
   </footer>
 
+  </div>
+  
 </body>
+</html>

@@ -1,0 +1,48 @@
+.about-fund{
+  padding-top: 100px;
+
+  p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3D4B53;
+  }
+
+  .img-float-right{
+    @media screen and (min-width: 993px){
+      float: right;
+    }
+  }
+
+  .mt{
+    margin-top: 105px;
+  }
+
+  ul{
+    padding-left: 40px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #3D4B53;
+    li{
+      list-style-type: none;
+      position: relative;
+      margin-bottom: 16px;
+
+      &:before{
+        display: block;
+        content: '';
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: -40px;
+        top: 0;
+        background-image: url('../img/check-circle.svg');
+      }
+    }
+  }
+}
