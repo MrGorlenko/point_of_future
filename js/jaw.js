@@ -35,12 +35,15 @@ $(document).ready(function(){
   })
 
   $('#black').click(function(){
-    $('body').css('background-color', '#000000');
-    $(deformELements).css('color', '#ffffff')
-    $('h2, h1, h3').css('color', '#ffffff')
-    // $('.founder').css('background-color', '#000000');
-    $('.founder p').css('color', '#3D4B53')
-    $('.FAQ .question').css('color', '#fff')
+    // $('body').css('background-color', '#000000');
+    // $(deformELements).css('color', '#ffffff')
+    // $('h2, h1, h3').css('color', '#ffffff')
+    // // $('.founder').css('background-color', '#000000');
+    // $('.founder p').css('color', '#3D4B53')
+    // $('.FAQ .question').css('color', '#fff')
+    $('section').css('background-color', '#000000')
+    $('*').css('color', '#fff')
+    // $(this).siblings()
   })
 
   $('#green').click(function(){
