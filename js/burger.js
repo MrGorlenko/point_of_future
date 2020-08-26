@@ -25,6 +25,8 @@ $(document).ready(function(){
     $('.burger').removeClass('burger-passive');
     burger_z();
     content_off();
+    $('#burger-menu .base ul, #burger-menu hr, #burger-menu .bottom, #burger-menu .links').css('opacity', '1')
+    $('#burger-menu .base ul, #burger-menu hr, #burger-menu .bottom, #burger-menu .links').css('z-index', 'auto')
   })
 
   $('#burger-close').click(function(){
@@ -33,6 +35,14 @@ $(document).ready(function(){
     burger_z_none();
     content_on();
   })
+
+
+  $('.search-input').click(function(){
+      $('#burger-menu .base ul, #burger-menu hr, #burger-menu .bottom, #burger-menu .links').css('opacity', '0')
+      $('#burger-menu .base ul, #burger-menu hr, #burger-menu .bottom, #burger-menu .links').css('z-index', '-1')
+  })
+
+
 
 
 

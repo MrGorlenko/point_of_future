@@ -1134,12 +1134,12 @@ button {
   text-decoration: none;
 }
 
-.widget_about_off {
+.widget_header_off {
   opacity: 0;
-  z-index: 0;
+  z-index: -1;
 }
 
-.widget_about_on {
+.widget_header_on {
   opacity: 1;
   z-index: 10;
 }

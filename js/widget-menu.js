@@ -8,15 +8,15 @@ $(document).ready(function(){
     counter++;
     switch (counter%2){
       case 0:
-        $(".widget_about").addClass('widget_about_on');
-        $(".widget_about").removeClass('widget_about_off');
+        $("#widget_about_project").addClass('widget_header_on');
+        $("#widget_about_project").removeClass('widget_header_off');
         $('.widget_about_bg').addClass('widget_about_bg_on')
         $('.widget_about_bg').removeClass('widget_about_bg_off')
 
         break;
       default:
-        $(".widget_about").removeClass('widget_about_on');
-        $(".widget_about").addClass('widget_about_off');
+        $("#widget_about_project").removeClass('widget_header_on');
+        $("#widget_about_project").addClass('widget_header_off');
         $('.widget_about_bg').removeClass('widget_about_bg_on')
         $('.widget_about_bg').addClass('widget_about_bg_off')
         break;
@@ -24,8 +24,8 @@ $(document).ready(function(){
   })
 
   $('.widget_about_bg').on('mouseover', function(){
-    $(".widget_about").removeClass('widget_about_on');
-    $(".widget_about").addClass('widget_about_off');
+    $("#widget_about_project").removeClass('widget_header_on');
+    $("#widget_about_project").addClass('widget_header_off');
     $('.widget_about_bg').removeClass('widget_about_bg_on')
     $('.widget_about_bg').addClass('widget_about_bg_off')
     counter = 1;
@@ -44,6 +44,39 @@ $(document).ready(function(){
   })
 
   /* ABOUT WIDGET */
+
+
+  /* FOR STUDENTS WIDGET */
+
+  $('#students-widget-call').on('mouseover', function(){
+    counter++;
+    switch (counter%2){
+      case 0:
+        $("#widget_students").addClass('widget_header_on');
+        $("#widget_students").removeClass('widget_header_off');
+        $('.widget_about_bg').addClass('widget_about_bg_on')
+        $('.widget_about_bg').removeClass('widget_about_bg_off')
+
+        break;
+      default:
+        $("#widget_students").removeClass('widget_header_on');
+        $("#widget_students").addClass('widget_header_off');
+        $('.widget_about_bg').removeClass('widget_about_bg_on')
+        $('.widget_about_bg').addClass('widget_about_bg_off')
+        break;
+    }
+  })
+
+  $('.widget_about_bg').on('mouseover', function(){
+    $("#widget_students").removeClass('widget_header_on');
+    $("#widget_students").addClass('widget_header_off');
+    $('.widget_about_bg').removeClass('widget_about_bg_on')
+    $('.widget_about_bg').addClass('widget_about_bg_off')
+    counter = 1;
+  })
+
+
+  /* FOR STUDENTS WIDGET */
 
 
   /* SEARCH WIDGET */
