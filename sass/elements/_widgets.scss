@@ -53,16 +53,18 @@
   width: 100%;
   height: 100vh;
   position: absolute;
-  top: 426px;
+  top: 400px;
   background-color: rgba($color: #000000, $alpha: .4);
 }
 .widget_about_bg_off{
   opacity: 0;
+  transition: opacity .3s ease;
   z-index: 0;
 }
 .widget_about_bg_on{
   opacity: 1;
-  z-index: 10;
+  transition: opacity .3s ease;
+  z-index: 8;
 }
 
 $widget-search-width: 420px;

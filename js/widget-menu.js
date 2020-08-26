@@ -78,6 +78,75 @@ $(document).ready(function(){
 
   /* FOR STUDENTS WIDGET */
 
+  /* NEWS WIDGET */
+
+  // news-widget-call
+
+  $('#news-widget-call').on('mouseover', function(){
+    counter++;
+    switch (counter%2){
+      case 0:
+        $("#widget_news").addClass('widget_header_on');
+        $("#widget_news").removeClass('widget_header_off');
+        $('.widget_about_bg').addClass('widget_about_bg_on')
+        $('.widget_about_bg').removeClass('widget_about_bg_off')
+
+        break;
+      default:
+        $("#widget_news").removeClass('widget_header_on');
+        $("#widget_news").addClass('widget_header_off');
+        $('.widget_about_bg').removeClass('widget_about_bg_on')
+        $('.widget_about_bg').addClass('widget_about_bg_off')
+        break;
+    }
+  })
+
+  $('.widget_about_bg').on('mouseover', function(){
+    $("#widget_news").removeClass('widget_header_on');
+    $("#widget_news").addClass('widget_header_off');
+    $('.widget_about_bg').removeClass('widget_about_bg_on')
+    $('.widget_about_bg').addClass('widget_about_bg_off')
+    counter = 1;
+  })
+
+
+  /* NEWS WIDGET */
+
+
+  /* INFORMATION WIDGET */
+
+
+  // information-widget-call
+
+  $('#information-widget-call').on('mouseover', function(){
+    counter++;
+    switch (counter%2){
+      case 0:
+        $("#widget_info").addClass('widget_header_on');
+        $("#widget_info").removeClass('widget_header_off');
+        $('.widget_about_bg').addClass('widget_about_bg_on')
+        $('.widget_about_bg').removeClass('widget_about_bg_off')
+
+        break;
+      default:
+        $("#widget_info").removeClass('widget_header_on');
+        $("#widget_info").addClass('widget_header_off');
+        $('.widget_about_bg').removeClass('widget_about_bg_on')
+        $('.widget_about_bg').addClass('widget_about_bg_off')
+        break;
+    }
+  })
+
+  $('.widget_about_bg').on('mouseover', function(){
+    $("#widget_info").removeClass('widget_header_on');
+    $("#widget_info").addClass('widget_header_off');
+    $('.widget_about_bg').removeClass('widget_about_bg_on')
+    $('.widget_about_bg').addClass('widget_about_bg_off')
+    counter = 1;
+  })
+
+  /* INFORMATION WIDGET */
+
 
   /* SEARCH WIDGET */
 
